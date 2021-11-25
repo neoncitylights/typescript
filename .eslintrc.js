@@ -2,7 +2,7 @@ module.exports = {
 	'env': {
 		'browser': true,
 		'es2021': true,
-		'node': true
+		'node': true,
 	},
 	'extends': [
 		'eslint:recommended',
@@ -13,7 +13,7 @@ module.exports = {
 	'parser': '@typescript-eslint/parser',
 	'parserOptions': {
 		'ecmaVersion': 2017,
-		'sourceType': 'module'
+		'sourceType': 'module',
 	},
 	'plugins': [
 		'@typescript-eslint/eslint-plugin',
@@ -45,5 +45,5 @@ module.exports = {
 		'linebreak-style': ['error', 'unix'],
 		'quotes': ['error', 'single'],
 		'semi': 'off',
-	}
+	},
 };
