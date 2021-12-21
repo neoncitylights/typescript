@@ -8,8 +8,7 @@ This repository template includes the following features:
  * *Auto-generated documentation* of TS code with [TypeDoc](https://typedoc.org/)
  * *Auto-formatted code* with [ESLint](https://eslint.org/)
  * *Unit tests* with [Jest](https://jestjs.io/) framework
- * *Dependency updates* with [Dependabot](https://github.com/dependabot/)
-
+ * *Dependency updates* with [Renovate](https://github.com/marketplace/renovate)
 
 # {library-name}
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
