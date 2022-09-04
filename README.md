@@ -1,6 +1,6 @@
 # Node.js & TypeScript Template
 This repository template includes the following features:
- * [Node.js](https://nodejs.org/) and [TypeScript](https://www.typescriptlang.org/) [v4.4](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-4.html) support
+ * [Node.js](https://nodejs.org/) and [TypeScript](https://www.typescriptlang.org/) [v4.8](https://www.typescriptlang.org/docs/handbook/release-notes/overview.html) support
  * Support for [GitHub Codespaces](https://github.com/features/codespaces)
  * Support for [JetBrains IDEs](https://www.jetbrains.com/)
  * *Continuous integration* with [GitHub Actions](https://github.com/features/actions) and [Codesandbox CI](https://codesandbox.io/ci)
@@ -13,6 +13,7 @@ This repository template includes the following features:
 # {library-name}
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![GitHub deployments](https://img.shields.io/github/deployments/samantha-labs/ts-scale/github-pages?label=deploy)](https://github.com/samantha-labs/ts-scale/deployments/activity_log?environment=github-pages)
+[![Node.js workflow](https://github.com/samantha-labs/node-ts-template/actions/workflows/main.yml/badge.svg)](https://github.com/samantha-labs/node-ts-template/actions/workflows/main.yml)
 
 Describe the library.
 
