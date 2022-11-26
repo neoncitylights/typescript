@@ -8,7 +8,7 @@ This repository template makes it easier to create a new NPM library, package or
   - [x] Auto-bundled, minified source code with [Webpack](https://webpack.js.org/)
   - [x] Auto-generated documentation for TypeScript code with [TypeDoc](https://typedoc.org/)
   - [x] Auto-formatted code with [ESLint](https://eslint.org/)
-  - [x] Unit testing and code coverage with [Jest](https://jestjs.io/) framework
+  - [x] Unit testing and code coverage with [Vitest](https://vitest.dev/) framework
   - [x] Dependency updates with [Renovate](https://github.com/marketplace/renovate)
 
 ## Getting started
@@ -26,7 +26,7 @@ gh repo create {repo-name} --public --clone --template neoncitylights/node-ts-te
 ## Configure
  - Configure NPM package: [`package.json`](./package.json) • [[docs](https://docs.npmjs.com/cli/v9/configuring-npm/package-json), [website](https://docs.npmjs.com/)]
  - Configure ESLint (code formatter + linter): [`.eslintrc.js`](./eslintrc.js) • [[docs](https://eslint.org/docs/latest/user-guide/configuring/), [website](https://eslint.org/)]
- - Configure Jest (testing framework): [`jest.config.js`](./jest.config.js) • [[docs](https://jestjs.io/docs/configuration), [website](https://jestjs.io/)]
+ - Configure Vitest (testing framework): [`vitest.config.ts`](./vitest.config.ts) • [[docs](https://vitest.dev/config/), [website](https://vitest.dev/)]
  - Configure TypeDoc (documentation generator): [`typedoc.json`](./typedoc.json) • [[docs](https://typedoc.org/guides/options/), [website](https://typedoc.org/)]
  - Configure Webpack (bundler): [`webpack.config.js`](./webpack.config.js) • [[docs](https://webpack.js.org/configuration/), [website](https://webpack.js.org/)]
 
