@@ -1,6 +1,6 @@
 # Node.js & TypeScript Template
 This repository template includes the following features:
- * [Node.js](https://nodejs.org/) and [TypeScript](https://www.typescriptlang.org/) [v4.8](https://www.typescriptlang.org/docs/handbook/release-notes/overview.html) support
+ * [Node.js](https://nodejs.org/) and [TypeScript](https://www.typescriptlang.org/) [v4.9](https://www.typescriptlang.org/docs/handbook/release-notes/overview.html) support
  * Support for [GitHub Codespaces](https://github.com/features/codespaces)
  * Support for [JetBrains IDEs](https://www.jetbrains.com/)
  * *Continuous integration* with [GitHub Actions](https://github.com/features/actions) and [Codesandbox CI](https://codesandbox.io/ci)
