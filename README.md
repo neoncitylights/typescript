@@ -16,12 +16,12 @@ This repository template makes it easier to create a new NPM library, package or
 gh repo create {repo-name} --public --clone --template neoncitylights/node-ts-template
 ```
 
-1. Open up Visual Studio Code
-2. Click on the 'Search' icon on the primary left side bar. This opens up [project-wide search](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files) so you can mass find-and-replace.
- - `{library-author}`: Replace this with your GitHub/npm username, or the name of your organization.
- - `{library-name}`: Replace this with the name of your library.
- - replace instances of `neonctylights/node-ts-template` in the README.md badges with your repository.
-3. Delete this `README.md`, and rename [`LIBRARY.md`](./LIBRARY.md) to `README.md`.
+ 1. Open up Visual Studio Code
+ 2. Click on the 'Search' icon on the primary left side bar. This opens up [project-wide search](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files) so you can mass find-and-replace.
+    1. `{library-author}`: Replace this with your GitHub/npm username, or the name of your organization.
+    2. `{library-name}`: Replace this with the name of your library.
+    3. replace instances of `neonctylights/node-ts-template` in the README.md badges with your repository.
+ 3. Delete this `README.md`, and rename [`LIBRARY.md`](./LIBRARY.md) to `README.md`.
 
 ## Configure
  - Configure NPM package: [`package.json`](./package.json) • [[docs](https://docs.npmjs.com/cli/v9/configuring-npm/package-json), [website](https://docs.npmjs.com/)]
