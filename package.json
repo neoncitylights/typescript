@@ -19,7 +19,14 @@
 		"type": "individual",
 		"url": "https://github.com/sponsors/{libauthor}"
 	},
-	"main": "./dist/bundle.js",
+	"main": "./dist/{libname}.umd.js",
+	"module": "./dist/{libname}.es.js",
+	"exports": {
+		".": {
+			"import": "./dist/{libname}.es.js",
+			"require": "./dist/{libname}.umd.js"
+		}
+	},
 	"types": "./dist/index.d.ts",
 	"files": [
 		"dist"
