@@ -23,7 +23,7 @@ module.exports = {
 		globalObject: 'this',
 		clean: true,
 		library: {
-			name: '{library-name}',
+			name: '{libname}',
 			type: 'umd'
 		},
 	},
