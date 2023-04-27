@@ -18,9 +18,9 @@ gh repo create {repo-name} --public --clone --template neoncitylights/node-ts-te
 
  1. Open up Visual Studio Code
  2. Click on the 'Search' icon on the primary left side bar. This opens up [project-wide search](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files) so you can mass find-and-replace.
-    1. `{library-author}`: Replace this with your GitHub/npm username, or the name of your organization.
-    2. `{library-name}`: Replace this with the name of your library.
-    3. replace instances of `neonctylights/node-ts-template` in the README.md badges with your repository.
+    1. `{libauthor}`: Replace this with your GitHub/npm username, or the name of your organization.
+    2. `{libname}`: Replace this with the name of your library.
+    3. `neonctylights/node-ts-template`: Replace this with the name of your repository (these occur in the badge URLs inside the `README.md` file).
  3. Delete this `README.md`, and rename [`LIBRARY.md`](./LIBRARY.md) to `README.md`.
 
 ## Configure

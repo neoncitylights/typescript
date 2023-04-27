@@ -1,23 +1,23 @@
 {
-	"name": "@{library-author}/{library-name}",
+	"name": "@{libauthor}/{libname}",
 	"version": "0.0.0",
 	"description": "{description}",
 	"license": "MIT",
 	"author": {
 		"name": "Samantha",
-		"url": "https://github.com/{library-author}"
+		"url": "https://github.com/{libauthor}"
 	},
 	"keywords": [
 		"typescript"
 	],
-	"bugs": "https://github.com/{library-author}/{library-name}/issues",
+	"bugs": "https://github.com/{libauthor}/{libname}/issues",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/{library-author}/{library-name}.git"
+		"url": "git+https://github.com/{libauthor}/{libname}.git"
 	},
 	"funding": {
 		"type": "individual",
-		"url": "https://github.com/sponsors/{library-author}"
+		"url": "https://github.com/sponsors/{libauthor}"
 	},
 	"main": "./dist/bundle.js",
 	"types": "./dist/index.d.ts",
