@@ -8,7 +8,7 @@ This repository template makes it easier to create a new NPM library, package or
   - [x] Auto-bundled, minified source code with [Vite](https://vitejs.dev/)
   - [x] Unit testing and code coverage with [Vitest](https://vitest.dev/) framework
   - [x] Auto-generated documentation for TypeScript code with [TypeDoc](https://typedoc.org/)
-  - [x] Auto-formatted code with [ESLint](https://eslint.org/)
+  - [x] Auto-formatted and linted code with [ESLint](https://eslint.org/)
   - [x] Dependency updates with [Renovate](https://github.com/marketplace/renovate)
 
 ## Getting started
@@ -26,6 +26,7 @@ gh repo create {repo-name} --public --clone --template neoncitylights/node-ts-te
 
 ## Configure
  - Configure NPM package: [`package.json`](./package.json) • [[docs](https://docs.npmjs.com/cli/v9/configuring-npm/package-json), [website](https://docs.npmjs.com/)]
+ - Configure TypeScript: [`tsconfig.json`](./tsconfig.json) • [[docs](https://www.typescriptlang.org/tsconfig), [website](https://www.typescriptlang.org/)]
  - Configure ESLint (code formatter + linter): [`.eslintrc.js`](./eslintrc.js) • [[docs](https://eslint.org/docs/latest/user-guide/configuring/), [website](https://eslint.org/)]
  - Configure Vite (bundler): [`vite.config.ts`](./vite.config.ts) • [[docs](https://vitejs.dev/config/), [website](https://vitejs.dev/)]
  - Configure Vitest (testing framework): [`vitest.config.ts`](./vitest.config.ts) • [[docs](https://vitest.dev/config/), [website](https://vitest.dev/)]
