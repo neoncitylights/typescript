@@ -19,19 +19,20 @@ jobs:
           node-version: '18'
           cache: 'npm'
       - name: Install
-        run: npm install
+        run: npm ci
       - name: Unit tests and lint
         run: npm run test:all
       - name: Build
         run: npm run build:all
       - name: Deploy documentation
+        if: ${{ github.event_name == 'push' }}
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        if: ${{ github.event_name == 'push' }}
       - name: Upload code coverage
+        if: ${{ github.event_name == 'push' }}
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
