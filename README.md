@@ -9,7 +9,7 @@ This repository template makes it easier to create a new NPM library, package or
   - [x] Unit testing and code coverage with [Vitest](https://vitest.dev/) framework
   - [x] Auto-generated documentation for TypeScript code with [TypeDoc](https://typedoc.org/)
   - [x] Auto-formatted and linted code with [ESLint](https://eslint.org/)
-  - [x] Dependency updates with [Renovate](https://github.com/marketplace/renovate)
+  - [x] Dependency updates with [Dependabot](https://github.com/dependabot)
 
 ## Getting started
 ```shell
