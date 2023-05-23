@@ -32,6 +32,7 @@ gh repo create {repo-name} --public --clone --template neoncitylights/node-ts-te
  - Configure Vitest (testing framework): [`vitest.config.ts`](./vitest.config.ts) • [[docs](https://vitest.dev/config/), [website](https://vitest.dev/)]
  - Configure TypeDoc (documentation generator): [`typedoc.json`](./typedoc.json) • [[docs](https://typedoc.org/options/configuration/), [website](https://typedoc.org/)]
  - Configure CodeSandbox CI: [`.codesandbox/ci.json`](./.codesandbox/ci.json) • [[docs](https://codesandbox.io/docs/learn/sandboxes/ci#configuration), [website](https://codesandbox.io/)]
+ - Configure Dependabot: [`./github/dependabot.yml`](./.github/dependabot.yml) • [[docs](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file), [website](https://github.com/dependabot)]
 
 ## License
 This software is licensed under the MIT license ([`LICENSE-MIT`](./LICENSE) or http://opensource.org/licenses/MIT).
