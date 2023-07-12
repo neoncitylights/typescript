@@ -19,6 +19,7 @@
 		"type": "individual",
 		"url": "https://github.com/sponsors/{libauthor}"
 	},
+	"type": "module",
 	"main": "./dist/{libname}.umd.js",
 	"module": "./dist/{libname}.es.js",
 	"exports": {
@@ -47,7 +48,7 @@
 		"test:ui": "npm run test -- --ui",
 		"test:watch": "npm run test -- --watch",
 		"test:all": "npm run test:ci && npm run lint",
-		"lint": "eslint src --ext .ts,.tsx",
+		"lint": "eslint",
 		"lint:fix": "npm run lint -- --fix",
 		"prepare": "npm run build",
 		"prepublishOnly": "npm run test:all",
