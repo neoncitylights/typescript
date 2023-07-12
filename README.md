@@ -33,7 +33,7 @@ gh repo create {repo-name} --public --clone --template neoncitylights/node-ts-te
 | ---- | ---- | ------------- |
 | NPM package | [`package.json`](./package.json) | [docs](https://docs.npmjs.com/cli/v9/configuring-npm/package-json), [website](https://docs.npmjs.com/) |
 | TypeScript | [`tsconfig.json`](./tsconfig.json) | [docs](https://www.typescriptlang.org/tsconfig), [website](https://www.typescriptlang.org/) |
-| ESLint (code formatter + linter) | [`.eslintrc.js`](./eslintrc.js) | [[docs](https://eslint.org/docs/latest/user-guide/configuring/), [website](https://eslint.org/) |
+| ESLint (code formatter + linter) | [`.eslintrc.js`](./eslintrc.js) | [docs](https://eslint.org/docs/latest/user-guide/configuring/), [website](https://eslint.org/) |
 | Vite (bundler) | [`vite.config.ts`](./vite.config.ts) | [docs](https://vitejs.dev/config/), [website](https://vitejs.dev/) |
 | Vitest (testing framework) | [`vitest.config.ts`](./vitest.config.ts) | [docs](https://vitest.dev/config/), [website](https://vitest.dev/) |
 | TypeDoc (documentation generator) | [`typedoc.json`](./typedoc.json) | [docs](https://typedoc.org/options/configuration/), [website](https://typedoc.org/) |
