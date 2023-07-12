@@ -15,17 +15,33 @@ This repository template makes it easier to create a new NPM library, package or
 
 ## Getting started
 
+### Creating a new repository
+
+#### GitHub UI
+
+You can create a new repository based on this template by clicking the "Use this template" button in the top-right corner of this page.
+
+#### Terminal
+
+You can run the following command below with the [GitHub CLI](https://cli.github.com/). Some notes:
+
+- Replace placeholder with name of your extension in upper CamelCase
+- Configure your repository's visibility with `--public`, `--private`, or `--internal`
+
 ```shell
 gh repo create {repo-name} --public --clone --template neoncitylights/node-ts-template
 ```
 
- 1. Open up Visual Studio Code
- 2. Click on the 'Search' icon on the primary left side bar. This opens up [project-wide search](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files) so you can mass find-and-replace.
-    1. `@author/package`: Replace this with the name of your package. This can be scoped under a user/organization (e.g `@samantha/my-really-cool-package`). **Note**: This placeholder is different than the others to avoid warnings from the NPM client.
-    2. `{libauthor}`: Replace this with your GitHub/npm username, or the name of your organization.
-    3. `{libname}`: Replace this with the name of your library.
-    4. `neonctylights/node-ts-template`: Replace this with the name of your repository (these occur in the badge URLs inside the `README.md` file).
- 3. Delete this `README.md`, and rename [`LIBRARY.md`](./LIBRARY.md) to `README.md`.
+### Cookiecutter stuff
+
+Using your favorite text editor or IDE, find-and-replace the following placeholders:
+
+- `@author/package`: Replace this with the name of your package. This can be scoped under a user/organization (e.g `@samantha/my-really-cool-package`). **Note**: This placeholder is different than the others to avoid warnings from the NPM client.
+- `{libauthor}`: Replace this with your GitHub/npm username, or the name of your organization.
+- `{libname}`: Replace this with the name of your library.
+- `neonctylights/node-ts-template`: Replace this with the name of your repository (these occur in the badge URLs inside the `README.md` file).
+
+Delete this `README.md`, and rename [`LIBRARY.md`](./LIBRARY.md) to `README.md`.
 
 ## Configure
 
