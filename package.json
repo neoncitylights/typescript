@@ -19,6 +19,7 @@
 		"type": "individual",
 		"url": "https://github.com/sponsors/{libauthor}"
 	},
+	"type": "module",
 	"main": "./dist/{libname}.umd.js",
 	"module": "./dist/{libname}.es.js",
 	"exports": {
