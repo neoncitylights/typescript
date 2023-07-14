@@ -1,23 +1,29 @@
+import tsEslint from '@typescript-eslint/eslint-plugin';
+import tsEslintParser from '@typescript-eslint/parser';
+import js from '@eslint/js';
+import globals from 'globals';
+
 export default [
+	js.configs.recommended,
+	tsEslint.configs.recommended,
 	{
-		env: {
-			'browser': true,
-			'es2022': true,
-			'node': true,
+		languageOptions: {
+			ecmaVersion: 2022,
+			sourceType: 'module',
+			parser: tsEslintParser,
+			parserOptions: {
+				ecmaVersion: 2022,
+				sourceType: 'module',
+			},
+			globals: {
+				...globals.node,
+				...globals.browser,
+			}
 		},
-		extends: [
-			'eslint:recommended',
-			'plugin:@typescript-eslint/recommended',
-		],
-		parser: '@typescript-eslint/parser',
-		parserOptions: {
-			'ecmaVersion': 2022,
-			'sourceType': 'module',
+		plugins: {
+			'@typescript-eslint': tsEslint,
 		},
-		plugins: [
-			'@typescript-eslint/eslint-plugin',
-		],
-		ignorePatterns: [
+		ignores: [
 			'dist/**/*.ts',
 		],
 		files: [
