@@ -45,13 +45,12 @@ Delete this `README.md`, and rename [`LIBRARY.md`](./LIBRARY.md) to `README.md`.
 
 ## Publishing a package
 
+if you haven't authenticated with the NPM CLI already, you'll need to do that first by running [`npm adduser`](https://docs.npmjs.com/cli/v9/commands/npm-adduser) in the terminal.
+
 - To publish a non-scoped package (e.g `my-cool-package`), run `npm publish`
 - To publish a [scoped package](https://docs.npmjs.com/cli/v9/using-npm/scope) (e.g `@namespace/my-cool-package`), pass the `--access` flag, which must be either `public` or `private`. For example:
 
   ```shell
-  # if you haven't authenticated with the NPM CLI already,
-  # you'll need to do that first by running `npm adduser`
-  # in the terminal
   npm publish --access public
   ```
 
