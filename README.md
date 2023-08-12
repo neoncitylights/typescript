@@ -43,7 +43,50 @@ Using your favorite text editor or IDE, find-and-replace the following placehold
 
 Delete this `README.md`, and rename [`LIBRARY.md`](./LIBRARY.md) to `README.md`.
 
+## Publishing a package
+
+- To publish a non-scoped package (e.g `my-cool-package`), run `npm publish`
+- To publish a [scoped package](https://docs.npmjs.com/cli/v9/using-npm/scope) (e.g `@namespace/my-cool-package`), pass the `--access` flag, which must be either `public` or `private`. For example:
+
+  ```shell
+  # if you haven't authenticated with the NPM CLI already,
+  # you'll need to do that first by running `npm adduser`
+  # in the terminal
+  npm publish --access public
+  ```
+
+> [!NOTE]
+> Please note that if you want to publish a private package on NPM, you must have [npm Pro](https://www.npmjs.com/products/pro).
+
 ## Configure
+
+### NPM scripts
+
+NPM has core commands that can be overriden by package authors. I've tried to make this as zero-config as possible, so its likely you won't need to change them any further. These commands are:
+
+- [`prepare`](https://docs.npmjs.com/cli/v8/using-npm/scripts#life-cycle-scripts)
+- [`prepublishOnly`](https://docs.npmjs.com/cli/v8/using-npm/scripts#life-cycle-scripts)
+- [`preversion`](https://docs.npmjs.com/cli/v6/commands/npm-version)
+- [`version`](https://docs.npmjs.com/cli/v6/commands/npm-version)
+- [`postversion`](https://docs.npmjs.com/cli/v6/commands/npm-version)
+
+These are the most relevant commands that you'll likely use:
+
+| Command | Description |
+| ------- | ----------- |
+| `npm run build` | Build the library for distributing |
+| `npm run build:typedoc` | Generate documentation |
+| `npm run build:typedoc-watch` | Generate documentation in watch mode|
+| `npm run clean` | Remove all generated files |
+| `npm run reinstall` | Cleans and reinstalls dependencies |
+| `npm run lint` | Check for linting errors |
+| `npm run lint:fix` | Fix linting errors |
+| `npm run test` | Run unit tests |
+| `npm run test:ci` | Run unit tests in CI mode |
+| `npm run test:ui` | Run unit tests in UI/browser mode |
+| `npm run test:watch` | Run unit tests in watch mode |
+
+### Developer tools
 
 | Tool | File | Documentation |
 | ---- | ---- | ------------- |
