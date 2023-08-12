@@ -46,7 +46,7 @@ Delete this `README.md`, and rename [`LIBRARY.md`](./LIBRARY.md) to `README.md`.
 ## Publishing a package
 
 - To publish a non-scoped package (e.g `my-cool-package`), run `npm publish`
-- To publish a scoped package (e.g `@namespace/my-cool-package`), pass the `--access` flag, which must be either `public` or `private`.
+- To publish a [scoped package](https://docs.npmjs.com/cli/v9/using-npm/scope) (e.g `@namespace/my-cool-package`), pass the `--access` flag, which must be either `public` or `private`.
 Please note that if you want to publish a private package on NPM, you must have [npm Pro](https://www.npmjs.com/products/pro). For example:
 
   ```shell
