@@ -57,6 +57,18 @@ if you haven't authenticated with the NPM CLI already, you'll need to do that fi
 > [!NOTE]
 > Please note that if you want to publish a private package on NPM, you must have [npm Pro](https://www.npmjs.com/products/pro).
 
+### GitHub Actions
+
+For your CI environment (when using GitHub Actions), you'll need to set the `NPM_TOKEN` environment variable to the value of your NPM token. You can find this by running `npm token list` in the terminal, and create a token by running `npm token create`.
+
+To add your token to your repository:
+
+1. Go to Settings > Security (Secrets and Variables) > Actions
+2. Press "New repository secret" button
+3. Enter `NPM_TOKEN` as the name of the secret
+4. Copy and paste the token value
+5. Press "Add secret" button
+
 ## Configure
 
 ### NPM scripts

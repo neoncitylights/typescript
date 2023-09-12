@@ -86,6 +86,25 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+  is-publishable:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: latest
+          cache: 'npm'
+          registry-url: 'https://registry.npmjs.org'
+      - name: Install dependencies
+        run: npm ci
+      - name: Check if publishable
+        run: npm publish --access public --dry-run
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
   ci-success:
     runs-on: ubuntu-latest
     if: ${{ success() && github.event_name == 'push' }}
@@ -94,6 +113,7 @@ jobs:
       - lint
       - test
       - docs
+      - is-publishable
     steps:
       - name: ✅ CI succeeded
         run: exit 0
@@ -105,6 +125,7 @@ jobs:
       - build
       - lint
       - test
+      - is-publishable
     steps:
       - name: ✅ CI succeeded
         run: exit 0
