@@ -29,7 +29,7 @@ You can run the following command below with the [GitHub CLI](https://cli.github
 - Configure your repository's visibility with `--public`, `--private`, or `--internal`
 
 ```shell
-gh repo create {repo-name} --public --clone --template neoncitylights/typescript-template
+gh repo create {{package}} --public --clone --template neoncitylights/typescript-template
 ```
 
 ### Cookiecutter stuff
