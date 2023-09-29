@@ -1,17 +1,17 @@
-# Node.js & TypeScript Template
+# TypeScript Template
 
 This repository template makes it easier to create a new NPM library, package or application using Node.js and TypeScript. It comes with several developer tools pre-configured and ready to use, so it's easier to get started.
 
 ## Features
 
-  - [x] [Node.js](https://nodejs.org/) and [TypeScript](https://www.typescriptlang.org/) [v5.0](https://www.typescriptlang.org/docs/handbook/release-notes/overview.html) support
-  - [x] Support for [GitHub Codespaces](https://github.com/features/codespaces)
-  - [x] Continuous integration with [GitHub Actions](https://github.com/features/actions) and [Codesandbox CI](https://codesandbox.io/ci)
-  - [x] Auto-bundled, minified source code with [Vite](https://vitejs.dev/)
-  - [x] Unit testing and code coverage with [Vitest](https://vitest.dev/) framework
-  - [x] Auto-generated documentation for TypeScript code with [TypeDoc](https://typedoc.org/)
-  - [x] Auto-formatted and linted code with [ESLint](https://eslint.org/)
-  - [x] Dependency updates with [Dependabot](https://github.com/dependabot)
+- [x] [Node.js](https://nodejs.org/) and [TypeScript](https://www.typescriptlang.org/) [v5.0](https://www.typescriptlang.org/docs/handbook/release-notes/overview.html) support
+- [x] Support for [GitHub Codespaces](https://github.com/features/codespaces)
+- [x] Continuous integration with [GitHub Actions](https://github.com/features/actions) and [Codesandbox CI](https://codesandbox.io/ci)
+- [x] Auto-bundled, minified source code with [Vite](https://vitejs.dev/)
+- [x] Unit testing and code coverage with [Vitest](https://vitest.dev/) framework
+- [x] Auto-generated documentation for TypeScript code with [TypeDoc](https://typedoc.org/)
+- [x] Auto-formatted and linted code with [ESLint](https://eslint.org/)
+- [x] Dependency updates with [Dependabot](https://github.com/dependabot)
 
 ## Getting started
 
@@ -55,7 +55,7 @@ if you haven't authenticated with the NPM CLI already, you'll need to do that fi
   ```
 
 > [!NOTE]
-> Please note that if you want to publish a private package on NPM, you must have [npm Pro](https://www.npmjs.com/products/pro).
+> To publish a private package on NPM, you must have [npm Pro](https://www.npmjs.com/products/pro).
 
 ### GitHub Actions
 
