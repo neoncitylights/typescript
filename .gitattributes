@@ -1,2 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Ignore Dockerfile in Linguist stats
+#
+# https://github.com/github-linguist/linguist/blob/master/docs/overrides.md
+Dockerfile -linguist-detectable
