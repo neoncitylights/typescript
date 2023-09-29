@@ -17,5 +17,13 @@
 	"exclude": [
 		"node_modules",
 		"**/__tests__/*"
-	]
+	],
+	"typedocOptions": {
+		"entryPoints": [
+			"src/index.ts"
+		],
+		"out": "docs/typedocs",
+		"lightHighlightTheme": "github-light",
+		"darkHighlightTheme": "github-dark"
+	}
 }
