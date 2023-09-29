@@ -1,5 +1,5 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.203.0/containers/typescript-node
+// https://github.com/devcontainers/images/tree/main/src/typescript-node
 {
 	"name": "Node.js & TypeScript",
 	"runArgs": [
@@ -7,11 +7,11 @@
 	],
 	"build": {
 		"dockerfile": "Dockerfile",
-		// Update 'VARIANT' to pick a Node version: 16, 14, 12.
+		// Update 'VARIANT' to pick a Node version
 		// Append -bullseye or -buster to pin to an OS version.
 		// Use -bullseye variants on local on arm64/Apple Silicon.
 		"args": {
-			"VARIANT": "18-bullseye"
+			"VARIANT": "20-bullseye"
 		}
 	},
 	"customizations": {
