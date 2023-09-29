@@ -3,7 +3,7 @@
 [![GitHub deployments](https://img.shields.io/github/deployments/{{author}}/{{package}}/github-pages?label=deploy)](https://github.com/{{author}}/{{package}}/deployments/activity_log?environment=github-pages)
 [![Node.js workflow](https://github.com/{{author}}/{{package}}/actions/workflows/main.yml/badge.svg)](https://github.com/{{author}}/{{package}}/actions/workflows/main.yml)
 
-Describe the library.
+{{desc}}
 
 ## Install
 ```
