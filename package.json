@@ -54,15 +54,15 @@
 		"postversion": "git push && git push --tags"
 	},
 	"devDependencies": {
-		"@vitest/coverage-v8": "^0.34.3",
-		"@vitest/ui": "^0.34.3",
+		"@vitest/coverage-v8": "^0.34.6",
+		"@vitest/ui": "^0.34.6",
 		"eslint": "8.48.0",
 		"eslint-config-neoncitylights": "^0.2.0",
 		"gh-pages": "6.0.0",
 		"typedoc": "0.25.1",
 		"typescript": "5.2.2",
 		"vite": "^4.4.9",
-		"vite-plugin-dts": "^3.5.3",
-		"vitest": "^0.34.3"
+		"vite-plugin-dts": "^3.6.0",
+		"vitest": "^0.34.6"
 	}
 }
