@@ -1,37 +1,8 @@
 {
-	"name": "@author/package",
-	"version": "0.0.0",
-	"description": "{{desc}}",
-	"license": "MIT",
-	"author": {
-		"name": "{{author}}",
-		"url": "https://github.com/{{author}}"
-	},
-	"keywords": [
-		"typescript"
+	"private": true,
+	"workspaces": [
+		"packages/**"
 	],
-	"bugs": "https://github.com/{{author}}/{{package}}/issues",
-	"repository": "github:{{author}}/{{package}}",
-	"funding": {
-		"type": "individual",
-		"url": "https://github.com/sponsors/{{author}}"
-	},
-	"type": "module",
-	"main": "./dist/{{package}}.umd.js",
-	"module": "./dist/{{package}}.es.js",
-	"exports": {
-		".": {
-			"import": "./dist/{{package}}.es.js",
-			"require": "./dist/{{package}}.umd.js"
-		}
-	},
-	"types": "./dist/index.d.ts",
-	"files": [
-		"dist"
-	],
-	"directories": {
-		"test": "tests"
-	},
 	"scripts": {
 		"build": "vite build",
 		"build:typedoc": "npx typedoc",
