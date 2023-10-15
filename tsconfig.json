@@ -1,3 +1,5 @@
+// Handbook: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+// Reference: https://www.typescriptlang.org/tsconfig
 {
 	"compilerOptions": {
 		/* base options */
