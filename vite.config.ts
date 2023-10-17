@@ -16,4 +16,10 @@ export default defineConfig({
 			insertTypesEntry: true,
 		}),
 	],
+	test: {
+		coverage: {
+			provider: 'v8',
+			reporter: [ 'text', 'json', 'html' ],
+		},
+	},
 });
