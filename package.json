@@ -35,20 +35,16 @@
 		"build:typedoc": "npx typedoc",
 		"build:typedoc-watch": "npm run build:typedoc -- --watch",
 		"build:all": "npm run build && npm run build:typedoc",
-
 		"clean": "rm -rf ./dist/ ./docs/typedocs/ ./node_modules && rm -rf ./package-lock.json",
 		"reinstall": "npm run clean && npm install",
 		"deploy": "gh-pages -d ./docs/typedocs",
-
 		"test": "vitest --coverage",
 		"test:ci": "npm run test -- run",
 		"test:ui": "npm run test -- --ui",
 		"test:watch": "npm run test -- --watch",
 		"test:all": "npm run test:ci && npm run lint",
-
 		"lint": "eslint src --ext .ts,.tsx",
 		"lint:fix": "npm run lint -- --fix",
-
 		"prepare": "npm run build",
 		"prepublishOnly": "npm run test:all",
 		"preversion": "npm run lint",
@@ -65,6 +61,7 @@
 		"typescript": "5.2.2",
 		"vite": "^4.4.9",
 		"vite-plugin-dts": "^3.6.0",
+		"vite-tsconfig-paths": "^4.2.1",
 		"vitest": "^0.34.6"
 	}
 }

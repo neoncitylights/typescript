@@ -24,7 +24,7 @@ updates:
       vite:
         patterns:
           - "vite"
-          - "vite-plugin-*"
+          - "vite-*"
           - "vitest"
           - "@vitest/*"
     open-pull-requests-limit: 4
