@@ -93,6 +93,7 @@ These are the most relevant commands that you'll likely use:
 | `npm run lint` | Check for linting errors |
 | `npm run lint:fix` | Fix linting errors |
 | `npm run test` | Run unit tests |
+| `npm run test:types` | Check TypeScript types are usable and valid |
 | `npm run test:ci` | Run unit tests in CI mode |
 | `npm run test:ui` | Run unit tests in UI/browser mode |
 | `npm run test:watch` | Run unit tests in watch mode |
