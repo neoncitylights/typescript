@@ -21,6 +21,10 @@ updates:
           - "eslint"
           - "typescript"
           - "typedoc"
+      markdownlint:
+        patterns:
+          - "markdownlint-cli2"
+          - "markdownlint-config-neoncitylights"
       vite:
         patterns:
           - "vite"
