@@ -28,17 +28,19 @@ jobs:
 
 
   lint:
-    name: lint (${{ matrix.tool }})
+    name: lint (${{ matrix.tool-lc }})
     runs-on: ubuntu-latest
     needs: build
     strategy:
       matrix:
         include:
-          - tool: eslint
+          - tool-lc: eslint
+            tool-uc: ESLint
             npm-cmd-suffix: es
             env-cmd: |
               npm run lint:es-env
-          - tool: markdownlint
+          - tool-lc: markdownlint
+            tool-uc: Markdownlint
             npm-cmd-suffix: md
             env-cmd: |
               node --version
@@ -57,7 +59,7 @@ jobs:
       - name: Print environment info
         run: |
           ${{ matrix.env-cmd }}
-      - name: Lint with ${{ matrix.tool }}
+      - name: Lint with ${{ matrix.tool-uc }}
         run: npm run lint:${{ matrix.npm-cmd-suffix }}
 
   test:
