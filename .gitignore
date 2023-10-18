@@ -122,9 +122,6 @@ next-env.d.ts
 # TernJS port file
 .tern-port
 
-# Stores VSCode versions used for testing VSCode extensions
-.vscode-test
-
 # yarn v2
 .yarn/cache
 .yarn/unplugged
@@ -141,6 +138,10 @@ storybook-static
 
 # Vercel
 .vercel
+
+## VSCode
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
 
 # VSCode Local History
 # https://marketplace.visualstudio.com/items?itemName=xyz.local-history
