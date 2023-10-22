@@ -23,6 +23,7 @@ updates:
         patterns:
           - "eslint*"
           - "markdownlint*"
+          - "publint"
       vite:
         patterns:
           - "vite"
