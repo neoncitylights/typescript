@@ -46,6 +46,13 @@ jobs:
               node --version
               npm --version
               npm run lint:md-env
+          - tool-lc: publint
+            tool-uc: publint
+            npm-cmd-suffix: pub
+            env-cmd: |
+              node --version
+              npm --version
+              npm run lint:pub-env
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
