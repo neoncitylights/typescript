@@ -35,17 +35,14 @@
 		"build:typedoc": "npx typedoc",
 		"build:typedoc-watch": "npm run build:typedoc -- --watch",
 		"build:all": "npm run build && npm run build:typedoc",
-
 		"clean": "rm -rf ./dist/ ./docs/typedocs/ ./node_modules && rm -rf ./package-lock.json",
 		"reinstall": "npm run clean && npm install",
 		"deploy": "gh-pages -d ./docs/typedocs",
-
 		"test": "vitest --coverage",
 		"test:ci": "npm run test -- run",
 		"test:ui": "npm run test -- --ui",
 		"test:watch": "npm run test -- --watch",
 		"test:all": "npm run test:ci && npm run lint",
-
 		"lint": "npm run lint:md && npm run lint:es",
 		"lint:md": "markdownlint-cli2 \"*/**.md\" \"#node_modules\"",
 		"lint:md-fix": "npm run lint:md -- --fix",
@@ -55,7 +52,6 @@
 		"lint:es-env": "eslint --env-info",
 		"lint:pub": "publint",
 		"lint:pub-env": "publint --version",
-
 		"prepare": "npm run build",
 		"prepublishOnly": "npm run test:all",
 		"preversion": "npm run lint",
@@ -70,6 +66,7 @@
 		"gh-pages": "6.0.0",
 		"markdownlint-cli2": "^0.10.0",
 		"markdownlint-config-neoncitylights": "^0.2.3",
+		"publint": "^0.2.5",
 		"typedoc": "0.25.2",
 		"typescript": "5.2.2",
 		"vite": "^4.5.0",
