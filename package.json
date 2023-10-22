@@ -20,8 +20,8 @@
 	"module": "./dist/{{package}}.es.js",
 	"exports": {
 		".": {
-			"import": "./dist/{{package}}.es.js",
-			"types": "./dist/index.d.ts"
+			"types": "./dist/index.d.ts",
+			"import": "./dist/{{package}}.es.js"
 		}
 	},
 	"files": [
@@ -53,6 +53,8 @@
 		"lint:es": "eslint src --ext .ts,.tsx",
 		"lint:es-fix": "npm run lint:es -- --fix",
 		"lint:es-env": "eslint --env-info",
+		"lint:pub": "publint",
+		"lint:pub-env": "publint --version",
 
 		"prepare": "npm run build",
 		"prepublishOnly": "npm run test:all",
