@@ -11,12 +11,16 @@ export default defineConfig({
 			fileName: (format) => `{{package}}.${format}.js`
 		}
 	},
+	define: { 
+		'import.meta.vitest': 'undefined', 
+	},
 	plugins: [
 		dts({
 			insertTypesEntry: true,
 		}),
 	],
 	test: {
+		includeSource: ['src/**/*.{js,ts}'],
 		coverage: {
 			provider: 'v8',
 			reporter: [ 'text', 'json', 'html' ],
