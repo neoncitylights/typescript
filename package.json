@@ -44,6 +44,7 @@
 		"test:watch": "npm run test -- --watch",
 		"test:all": "npm run test:ci && npm run lint",
 		"lint": "npm run lint:md && npm run lint:es",
+		"lint:fix": "npm run lint:md-fix && npm run lint:es-fix",
 		"lint:md": "markdownlint-cli2 \"*/**.md\" \"#node_modules\"",
 		"lint:md-fix": "npm run lint:md -- --fix",
 		"lint:md-env": "markdownlint-cli2 --version",
