@@ -2,10 +2,6 @@
 // Reference: https://www.typescriptlang.org/tsconfig
 {
 	"compilerOptions": {
-		"types": [
-			"vitest/importMeta" 
-		],
-
 		/* base options */
 		"esModuleInterop": true,
 		"skipLibCheck": true,
