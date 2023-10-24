@@ -37,6 +37,9 @@
 		"isolatedModules": true,
 		"baseUrl": "./src",
 		"sourceMap": true,
+		"types": [
+			"vitest/importMeta"
+		],
 	},
 	"include": [
 		"src/**/*.ts"

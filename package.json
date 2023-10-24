@@ -20,8 +20,8 @@
 	"module": "./dist/{{package}}.es.js",
 	"exports": {
 		".": {
-			"import": "./dist/{{package}}.es.js",
-			"types": "./dist/index.d.ts"
+			"types": "./dist/index.d.ts",
+			"import": "./dist/{{package}}.es.js"
 		}
 	},
 	"files": [
@@ -35,21 +35,25 @@
 		"build:typedoc": "npx typedoc",
 		"build:typedoc-watch": "npm run build:typedoc -- --watch",
 		"build:all": "npm run build && npm run build:typedoc",
-
 		"clean": "rm -rf ./dist/ ./docs/typedocs/ ./node_modules && rm -rf ./package-lock.json",
 		"reinstall": "npm run clean && npm install",
 		"deploy": "gh-pages -d ./docs/typedocs",
-
 		"test": "vitest --coverage",
 		"test:ci": "npm run test -- run",
 		"test:ui": "npm run test -- --ui",
 		"test:watch": "npm run test -- --watch",
 		"test:types": "attw --pack . --ignore-rules cjs-resolves-to-esm",
 		"test:all": "npm run test:ci && npm run test:types && npm run lint",
-
 		"lint": "eslint src --ext .ts,.tsx",
 		"lint:fix": "npm run lint -- --fix",
-
+		"lint:md": "markdownlint-cli2 \"*/**.md\" \"#node_modules\"",
+		"lint:md-fix": "npm run lint:md -- --fix",
+		"lint:md-env": "markdownlint-cli2 --version",
+		"lint:es": "eslint src --ext .ts,.tsx",
+		"lint:es-fix": "npm run lint:es -- --fix",
+		"lint:es-env": "eslint --env-info",
+		"lint:pub": "publint",
+		"lint:pub-env": "publint --version",
 		"prepare": "npm run build",
 		"prepublishOnly": "npm run test:all",
 		"preversion": "npm run lint",
@@ -58,14 +62,18 @@
 	},
 	"devDependencies": {
 		"@arethetypeswrong/cli": "^0.12.2",
+		"@types/node": "^20.8.7",
 		"@vitest/coverage-v8": "^0.34.6",
 		"@vitest/ui": "^0.34.6",
-		"eslint": "8.50.0",
-		"eslint-config-neoncitylights": "^0.2.0",
+		"eslint": "8.52.0",
+		"eslint-config-neoncitylights": "^0.3.0",
 		"gh-pages": "6.0.0",
-		"typedoc": "0.25.1",
+		"markdownlint-cli2": "^0.10.0",
+		"markdownlint-config-neoncitylights": "^0.2.3",
+		"publint": "^0.2.5",
+		"typedoc": "0.25.2",
 		"typescript": "5.2.2",
-		"vite": "^4.4.9",
+		"vite": "^4.5.0",
 		"vite-plugin-dts": "^3.6.0",
 		"vitest": "^0.34.6"
 	}
