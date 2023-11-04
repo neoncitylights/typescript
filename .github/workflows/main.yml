@@ -28,7 +28,7 @@ jobs:
         run: npm run build
 
   lint:
-    name: lint (${{ matrix.tool-lc }})
+    name: lint (${{ matrix.tool }})
     runs-on: ubuntu-latest
     needs: build
     strategy:
