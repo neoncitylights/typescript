@@ -8,19 +8,23 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
     commit-message:
       prefix: "chore(deps/npm):"
     labels:
       - "t-dependencies"
       - "pkg-npm"
     groups:
-      typescript-eslint:
+      typescript:
         patterns:
-          - "@typescript-eslint/*"
-          - "eslint"
           - "typescript"
           - "typedoc"
+          - "@types/node"
+      lint:
+        patterns:
+          - "eslint*"
+          - "markdownlint*"
+          - "publint"
       vite:
         patterns:
           - "vite"
@@ -32,7 +36,7 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "monthly"
+      interval: "daily"
     commit-message:
       prefix: "chore(deps/actions):"
     labels:
