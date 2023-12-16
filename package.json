@@ -4,7 +4,6 @@
 		"packages/**"
 	],
 	"scripts": {
-		"build": "vite build",
 		"build:typedoc": "npx typedoc",
 		"build:typedoc-watch": "npm run build:typedoc -- --watch",
 		"build:all": "npm run build && npm run build:typedoc",
@@ -25,12 +24,7 @@
 		"lint:es-fix": "npm run lint:es -- --fix",
 		"lint:es-env": "eslint --env-info",
 		"lint:pub": "publint",
-		"lint:pub-env": "publint --version",
-		"prepare": "npm run build",
-		"prepublishOnly": "npm run test:all",
-		"preversion": "npm run lint",
-		"version": "npm run lint && git add -A src",
-		"postversion": "git push && git push --tags"
+		"lint:pub-env": "publint --version"
 	},
 	"devDependencies": {
 		"@types/node": "^20.10.4",
