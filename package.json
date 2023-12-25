@@ -17,19 +17,17 @@
 		"url": "https://github.com/sponsors/{{author}}"
 	},
 	"type": "module",
-	"module": "./dist/{{package}}.es.js",
+	"types": "./dist/index.d.ts",
+	"module": "./dist/{{package}}.mjs",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
-			"import": "./dist/{{package}}.es.js"
+			"import": "./dist/{{package}}.mjs"
 		}
 	},
 	"files": [
 		"dist"
 	],
-	"directories": {
-		"test": "tests"
-	},
 	"scripts": {
 		"build": "vite build",
 		"build:typedoc": "npx typedoc",
@@ -43,7 +41,7 @@
 		"test:ui": "npm run test -- --ui",
 		"test:watch": "npm run test -- --watch",
 		"test:all": "npm run test:ci && npm run lint",
-		"lint": "npm run lint:md && npm run lint:es",
+		"lint": "npm run lint:md && npm run lint:es && npm run lint:pub",
 		"lint:fix": "npm run lint:md-fix && npm run lint:es-fix",
 		"lint:md": "markdownlint-cli2 \"*/**.md\" \"#node_modules\"",
 		"lint:md-fix": "npm run lint:md -- --fix",
