@@ -30,7 +30,6 @@ jobs:
   lint:
     name: lint (${{ matrix.tool }})
     runs-on: ubuntu-latest
-    needs: build
     strategy:
       matrix:
         include:
@@ -68,7 +67,6 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-    needs: build
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -90,7 +88,6 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'push' }}
-    needs: build
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -112,7 +109,6 @@ jobs:
 
   pkg-dry-run:
     runs-on: ubuntu-latest
-    needs: build
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
