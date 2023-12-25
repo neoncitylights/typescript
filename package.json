@@ -48,7 +48,7 @@
 		"lint:md": "markdownlint-cli2 \"*/**.md\" \"#node_modules\"",
 		"lint:md-fix": "npm run lint:md -- --fix",
 		"lint:md-env": "markdownlint-cli2 --version",
-		"lint:es": "eslint src --ext .ts,.tsx",
+		"lint:es": "eslint . --ext .ts,.tsx",
 		"lint:es-fix": "npm run lint:es -- --fix",
 		"lint:es-env": "eslint --env-info",
 		"lint:pub": "publint",
