@@ -65,7 +65,7 @@
 		"@vitest/ui": "^1.1.0",
 		"eslint": "8.56.0",
 		"eslint-config-neoncitylights": "^0.3.0",
-		"gh-pages": "6.1.0",
+		"gh-pages": "6.1.1",
 		"markdownlint-cli2": "^0.11.0",
 		"markdownlint-config-neoncitylights": "^0.3.0",
 		"publint": "^0.2.6",
