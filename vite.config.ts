@@ -1,4 +1,5 @@
-import path from 'path';
+import path from 'node:path';
+
 import dts from 'vite-plugin-dts';
 import { defineConfig } from 'vitest/config';
 
@@ -6,9 +7,8 @@ export default defineConfig({
 	build: {
 		lib: {
 			entry: path.resolve(__dirname, 'src/index.ts'),
-			name: '{{package}}',
 			formats: ['es'],
-			fileName: (format) => `{{package}}.${format}.js`,
+			fileName: () => '{{package}}.mjs',
 		},
 	},
 	define: { 
