@@ -86,8 +86,8 @@ These are the most relevant commands that you'll likely use:
 | Command | Description |
 | ------- | ----------- |
 | `npm run build` | Build the library for distributing |
-| `npm run build:typedoc` | Generate documentation |
-| `npm run build:typedoc-watch` | Generate documentation in watch mode|
+| `npm run docs` | Generate documentation |
+| `npm run docs:watch` | Generate documentation in watch mode|
 | `npm run clean` | Remove all generated files |
 | `npm run reinstall` | Cleans and reinstalls dependencies |
 | `npm run lint` | Check for linting errors |
