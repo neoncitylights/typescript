@@ -1,5 +1,6 @@
 {
 	"compilerOptions": {
+		"composite": true,
 		/* base options */
 		"esModuleInterop": true,
 		"skipLibCheck": true,
@@ -30,11 +31,11 @@
 		"target": "ES2022",
 		"module": "ESNext",
 		"moduleResolution": "Bundler",
-		"noEmit": true,
-		"declaration": true,
 		"isolatedModules": true,
 		"baseUrl": "./src",
 		"sourceMap": true,
+		"declaration": true,
+		"declarationMap": true,
 		"types": [
 			"vitest/importMeta"
 		],
