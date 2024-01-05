@@ -1,8 +1,8 @@
-# `@{{author}}/{{package}}`
+# @{{author}}/{{package}}
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![GitHub deployments](https://img.shields.io/github/deployments/{{author}}/{{package}}/github-pages?label=deploy)](https://github.com/{{author}}/{{package}}/deployments/activity_log?environment=github-pages)
-[![Node.js workflow](https://github.com/{{author}}/{{package}}/actions/workflows/main.yml/badge.svg)](https://github.com/{{author}}/{{package}}/actions/workflows/main.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![GitHub deployments](https://img.shields.io/github/deployments/{{author}}/{{package}}/github-pages?label=deploy&style=flat-square)](https://github.com/{{author}}/{{package}}/deployments/activity_log?environment=github-pages)
+[![Node.js workflow](https://img.shields.io/github/actions/workflow/status/neoncitylights/types/.github/workflows/main.yml?style=flat-square)](https://github.com/{{author}}/{{package}}/actions/workflows/main.yml)
 
 {{desc}}
 

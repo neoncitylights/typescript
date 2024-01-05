@@ -4,7 +4,7 @@ This repository template makes it easier to create a new NPM library, package or
 
 ## Features
 
-- [x] [Node.js](https://nodejs.org/) and [TypeScript](https://www.typescriptlang.org/) [v5.0](https://www.typescriptlang.org/docs/handbook/release-notes/overview.html) support
+- [x] [Node.js](https://nodejs.org/) and latest [TypeScript](https://www.typescriptlang.org/) support
 - [x] Support for [GitHub Codespaces](https://github.com/features/codespaces)
 - [x] Continuous integration with [GitHub Actions](https://github.com/features/actions) and [Codesandbox CI](https://codesandbox.io/ci)
 - [x] Auto-bundled, minified source code with [Vite](https://vitejs.dev/)
@@ -86,8 +86,8 @@ These are the most relevant commands that you'll likely use:
 | Command | Description |
 | ------- | ----------- |
 | `npm run build` | Build the library for distributing |
-| `npm run build:typedoc` | Generate documentation |
-| `npm run build:typedoc-watch` | Generate documentation in watch mode|
+| `npm run docs` | Generate documentation |
+| `npm run docs:watch` | Generate documentation in watch mode|
 | `npm run clean` | Remove all generated files |
 | `npm run reinstall` | Cleans and reinstalls dependencies |
 | `npm run lint` | Check for linting errors |
