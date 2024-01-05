@@ -1,13 +1,15 @@
 {
+	"name": "@author/monorepo",
 	"private": true,
 	"workspaces": [
 		"packages/**"
 	],
 	"scripts": {
-		"build:typedoc": "npx typedoc",
-		"build:typedoc-watch": "npm run build:typedoc -- --watch",
+		"build": "npm run build -ws --if-present",
 		"build:all": "npm run build && npm run build:typedoc",
-		"clean": "rm -rf ./dist/ ./docs/typedocs/ ./node_modules && rm -rf ./package-lock.json",
+		"docs": "typedoc",
+		"docs:watch": "npm run docs -- --watch",
+		"clean": "rm -rf ./dist/ ./docs/typedoc/ ./node_modules && rm -rf ./package-lock.json",
 		"reinstall": "npm run clean && npm install",
 		"deploy": "gh-pages -d ./docs/typedoc/",
 		"test": "vitest --coverage",
@@ -20,10 +22,10 @@
 		"lint:md": "markdownlint-cli2 \"*/**.md\" \"#node_modules\"",
 		"lint:md-fix": "npm run lint:md -- --fix",
 		"lint:md-env": "markdownlint-cli2 --version",
-		"lint:es": "eslint . --ext .ts,.tsx",
+		"lint:es": "eslint . --cache --ext .ts,.tsx",
 		"lint:es-fix": "npm run lint:es -- --fix",
 		"lint:es-env": "eslint --env-info",
-		"lint:pub": "publint",
+		"lint:pub": "npm run publint -ws",
 		"lint:pub-env": "publint --version"
 	},
 	"devDependencies": {

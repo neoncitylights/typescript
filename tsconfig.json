@@ -1,0 +1,25 @@
+// Handbook: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+// Reference: https://www.typescriptlang.org/tsconfig
+{
+	"compilerOptions": {
+		// monorepo setup
+		// - composite: cache builds with a .tsbuildinfo
+		// - sourceMap/declarationMap: enable to ensure go-to definitions
+		//   will work properly
+		"declaration": true,
+		"composite": true,
+		"sourceMap": true,
+		"declarationMap": true
+	},
+	"references": [
+		{ "path": "packages/pkg1" }
+	],
+	"typedocOptions": {
+		"out": "docs/typedoc",
+		"entryPoints": ["packages/*"],
+		"entryPointStrategy": "packages",
+		"includeVersion": false,
+		"lightHighlightTheme": "github-light",
+		"darkHighlightTheme": "github-dark"
+	}
+}
