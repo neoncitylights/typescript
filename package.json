@@ -6,7 +6,7 @@
 	],
 	"scripts": {
 		"build": "npm run build -ws --if-present",
-		"build:all": "npm run build && npm run build:typedoc",
+		"build:all": "npm run build && npm run docs",
 		"docs": "typedoc",
 		"docs:watch": "npm run docs -- --watch",
 		"clean": "rm -rf ./dist/ ./docs/typedoc/ ./node_modules && rm -rf ./package-lock.json",
