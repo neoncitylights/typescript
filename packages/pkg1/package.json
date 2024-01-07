@@ -28,9 +28,6 @@
 	"files": [
 		"dist"
 	],
-	"directories": {
-		"test": "tests"
-	},
 	"scripts": {
 		"build": "vite build",
 		"clean": "rm -rf ./dist/",
