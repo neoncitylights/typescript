@@ -58,7 +58,7 @@
 		"postversion": "git push && git push --tags"
 	},
 	"devDependencies": {
-		"@types/node": "^20.10.6",
+		"@types/node": "^20.10.7",
 		"@vitest/coverage-v8": "^1.1.1",
 		"@vitest/ui": "^1.1.1",
 		"eslint": "8.56.0",
@@ -67,7 +67,7 @@
 		"markdownlint-cli2": "^0.11.0",
 		"markdownlint-config-neoncitylights": "^0.3.0",
 		"publint": "^0.2.7",
-		"typedoc": "0.25.4",
+		"typedoc": "0.25.6",
 		"typescript": "5.3.3",
 		"vite": "^5.0.10",
 		"vite-plugin-dts": "^3.6.4",
