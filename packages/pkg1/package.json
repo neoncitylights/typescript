@@ -32,10 +32,11 @@
 		"build": "vite build",
 		"clean": "rm -rf ./dist/",
 		"reinstall": "npm run clean && npm install",
+		"lint": "eslint . --cache --ext .ts,.tsx --config ./../../.eslintrc.cjs",
+		"test": "vitest",
 		"prepublint": "npm run build",
 		"publint": "publint",
-		"prepare": "npm run build",
-		"prepublishOnly": "npm run test:all",
+		"prepublishOnly": "npm run publint && npm run test",
 		"preversion": "npm run lint",
 		"version": "npm run lint && git add -A src",
 		"postversion": "git push && git push --tags"
