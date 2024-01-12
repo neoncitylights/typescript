@@ -114,7 +114,7 @@ These are the most relevant commands that you'll likely use:
 
 ## License
 
-This software is licensed under the MIT license ([`LICENSE-MIT`](./LICENSE) or <http://opensource.org/licenses/MIT>).
+This software is licensed under the MIT license ([`LICENSE-MIT`](./LICENSE) or <https://opensource.org/license/mit/>).
 
 ### Contribution
 
