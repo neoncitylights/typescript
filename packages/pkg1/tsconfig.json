@@ -1,0 +1,16 @@
+{
+	"extends": "./../../tsconfig.base.json",
+	"include": [
+		"src/**/*.ts"
+	],
+	"exclude": [
+		"node_modules",
+		"**/tests/*",
+		"**/__tests__/*"
+	],
+	"typedocOptions": {
+		"entryPoints": [
+			"src/index.ts"
+		]
+	}
+}

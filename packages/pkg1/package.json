@@ -1,0 +1,44 @@
+{
+	"name": "@author/package",
+	"version": "0.0.0",
+	"description": "{{desc}}",
+	"license": "MIT",
+	"author": {
+		"name": "{{author}}",
+		"url": "https://github.com/{{author}}"
+	},
+	"keywords": [
+		"typescript"
+	],
+	"bugs": "https://github.com/{{author}}/{{package}}/issues",
+	"repository": "github:{{author}}/{{package}}",
+	"funding": {
+		"type": "individual",
+		"url": "https://github.com/sponsors/{{author}}"
+	},
+	"type": "module",
+	"types": "./dist/index.d.ts",
+	"module": "./dist/{{package}}.mjs",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/{{package}}.mjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "vite build",
+		"clean": "rm -rf ./dist/",
+		"reinstall": "npm run clean && npm install",
+		"lint": "eslint . --cache --ext .ts,.tsx --config ./../../.eslintrc.cjs",
+		"test": "vitest",
+		"prepublint": "npm run build",
+		"publint": "publint",
+		"prepublishOnly": "npm run publint && npm run test",
+		"preversion": "npm run lint",
+		"version": "npm run lint && git add -A src",
+		"postversion": "git push && git push --tags"
+	}
+}

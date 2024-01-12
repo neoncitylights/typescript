@@ -41,7 +41,7 @@ Using your favorite text editor or IDE, find-and-replace the following placehold
 - `{{package}}`: Replace this with the name of your library.
 - `{{desc}}`: Replace this with a short description of your library.
 
-Delete this `README.md`, and rename [`LIBRARY.md`](./LIBRARY.md) to `README.md`.
+Delete this `README.md`, and rename [`LIBRARY.md`](packages/pkg1/LIBRARY.md) to `README.md`.
 
 ## Publishing a package
 
@@ -101,13 +101,13 @@ These are the most relevant commands that you'll likely use:
 
 | Tool | File | Documentation |
 | ---- | ---- | ------------- |
-| NPM package | [`package.json`](./package.json) | [docs](https://docs.npmjs.com/cli/v9/configuring-npm/package-json), [website](https://docs.npmjs.com/) |
-| TypeScript | [`tsconfig.json`](./tsconfig.json) | [docs](https://www.typescriptlang.org/tsconfig), [website](https://www.typescriptlang.org/) |
-| TypeDoc (documentation generator) | [`tsconfig.json`](./tsconfig.json) (`typedocOptions`) | [docs](https://typedoc.org/options/configuration/), [website](https://typedoc.org/) |
-| ESLint (code formatter + linter) | [`eslintrc.cjs`](./eslintrc.js) | [docs](https://eslint.org/docs/latest/user-guide/configuring/), [website](https://eslint.org/) |
+| NPM package | [`package.json`](packages/pkg1/package.json) | [docs](https://docs.npmjs.com/cli/v9/configuring-npm/package-json), [website](https://docs.npmjs.com/) |
+| TypeScript | [`tsconfig.json`](packages/pkg1/tsconfig.json) | [docs](https://www.typescriptlang.org/tsconfig), [website](https://www.typescriptlang.org/) |
+| TypeDoc (documentation generator) | [`tsconfig.json`](packages/pkg1/tsconfig.json) (`typedocOptions`) | [docs](https://typedoc.org/options/configuration/), [website](https://typedoc.org/) |
+| ESLint (code formatter + linter) | [`eslint.config.js`](./eslint.config.js) | [docs](https://eslint.org/docs/latest/user-guide/configuring/), [website](https://eslint.org/) |
 | Markdownlint (Markdown linter)   | [`.markdownlint-cli2.jsonc`](./.markdownlint-cli2.jsonc) | [docs](https://github.com/DavidAnson/markdownlint-cli2#markdownlint-cli2jsonc) |
-| Vite (bundler) | [`vite.config.ts`](./vite.config.ts) | [docs](https://vitejs.dev/config/), [website](https://vitejs.dev/) |
-| Vitest (testing framework) | [`vite.config.ts`](./vite.config.ts) (`test`) | [docs](https://vitest.dev/config/), [website](https://vitest.dev/) |
+| Vite (bundler) | [`vite.config.ts`](packages/pkg1/vite.config.ts) | [docs](https://vitejs.dev/config/), [website](https://vitejs.dev/) |
+| Vitest (testing framework) | [`vite.config.ts`](packages/pkg1/vite.config.ts) (`test`) | [docs](https://vitest.dev/config/), [website](https://vitest.dev/) |
 | CodeSandbox CI | [`.codesandbox/ci.json`](./.codesandbox/ci.json) | [docs](https://codesandbox.io/docs/learn/sandboxes/ci#configuration), [website](https://codesandbox.io/) |
 | Dependabot | [`.github/dependabot.yml`](./.github/dependabot.yml) | [docs](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file), [website](https://github.com/dependabot) |
 

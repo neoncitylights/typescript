@@ -2,58 +2,24 @@
 // Reference: https://www.typescriptlang.org/tsconfig
 {
 	"compilerOptions": {
-		/* base options */
-		"esModuleInterop": true,
-		"skipLibCheck": true,
-		"allowJs": true,
-		"resolveJsonModule": true,
-		"verbatimModuleSyntax": true,
-		"moduleDetection": "force",
-
-		/* strictness */
-		"strict": true,
-		"forceConsistentCasingInFileNames": true,
-		"allowUnusedLabels": false,
-		"allowUnreachableCode": false,
-		"exactOptionalPropertyTypes": true,
-		"noFallthroughCasesInSwitch": true,
-		"noImplicitOverride": true,
-		"noImplicitReturns": true,
-		"noPropertyAccessFromIndexSignature": true,
-		"noUncheckedIndexedAccess": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-
-		/** ES support */
-		"useDefineForClassFields": true,
-
-		/* transpilation */
-		"lib": [ "ES2022" ],
-		"target": "ES2022",
-		"module": "ESNext",
-		"moduleResolution": "Bundler",
-		"noEmit": true,
+		// monorepo setup
+		// - composite: cache builds with a .tsbuildinfo
+		// - sourceMap/declarationMap: enable to ensure go-to definitions
+		//   will work properly
 		"declaration": true,
-		"isolatedModules": true,
-		"baseUrl": "./src",
+		"composite": true,
 		"sourceMap": true,
-		"types": [
-			"vitest/importMeta"
-		],
+		"declarationMap": true,
+		"esModuleInterop": true
 	},
-	"include": [
-		"src/**/*.ts"
-	],
-	"exclude": [
-		"node_modules",
-		"**/tests/*",
-		"**/__tests__/*"
+	"references": [
+		{ "path": "packages/pkg1" }
 	],
 	"typedocOptions": {
-		"entryPoints": [
-			"src/index.ts"
-		],
 		"out": "docs/typedoc",
+		"entryPoints": ["packages/*"],
+		"entryPointStrategy": "packages",
+		"includeVersion": false,
 		"lightHighlightTheme": "github-light",
 		"darkHighlightTheme": "github-dark"
 	}
