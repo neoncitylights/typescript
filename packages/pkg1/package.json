@@ -16,6 +16,9 @@
 		"type": "individual",
 		"url": "https://github.com/sponsors/{{author}}"
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"type": "module",
 	"types": "./dist/index.d.ts",
 	"module": "./dist/{{package}}.mjs",
