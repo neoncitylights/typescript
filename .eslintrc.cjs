@@ -3,6 +3,6 @@ module.exports = {
 		'neoncitylights/typescript',
 	],
 	ignorePatterns: [
-		"dist"
-	]
+		'dist',
+	],
 };
