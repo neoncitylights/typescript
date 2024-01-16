@@ -104,7 +104,7 @@ These are the most relevant commands that you'll likely use:
 | NPM package | [`package.json`](packages/pkg1/package.json) | [docs](https://docs.npmjs.com/cli/v10/configuring-npm/package-json), [website](https://docs.npmjs.com/) |
 | TypeScript | [`tsconfig.json`](packages/pkg1/tsconfig.json) | [docs](https://www.typescriptlang.org/tsconfig), [website](https://www.typescriptlang.org/) |
 | TypeDoc (documentation generator) | [`tsconfig.json`](packages/pkg1/tsconfig.json) (`typedocOptions`) | [docs](https://typedoc.org/options/configuration/), [website](https://typedoc.org/) |
-| ESLint (code formatter + linter) | [`eslint.config.js`](./eslint.config.js) | [docs](https://eslint.org/docs/latest/use/configure/), [website](https://eslint.org/) |
+| ESLint (code formatter + linter) | [`.eslintrc.cjs`](./.eslintrc.cjs) | [docs](https://eslint.org/docs/latest/use/configure/), [website](https://eslint.org/) |
 | Markdownlint (Markdown linter)   | [`.markdownlint-cli2.jsonc`](./.markdownlint-cli2.jsonc) | [docs](https://github.com/DavidAnson/markdownlint-cli2#markdownlint-cli2jsonc) |
 | Vite (bundler) | [`vite.config.ts`](packages/pkg1/vite.config.ts) | [docs](https://vitejs.dev/config/), [website](https://vitejs.dev/) |
 | Vitest (testing framework) | [`vite.config.ts`](packages/pkg1/vite.config.ts) (`test`) | [docs](https://vitest.dev/config/), [website](https://vitest.dev/) |
