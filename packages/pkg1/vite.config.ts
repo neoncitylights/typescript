@@ -1,9 +1,9 @@
 import path from 'node:path';
 
 import dts from 'vite-plugin-dts';
-import { defineConfig } from 'vitest/config';
+import { defineProject } from 'vitest/config';
 
-export default defineConfig({
+export default defineProject({
 	build: {
 		lib: {
 			entry: path.resolve(__dirname, 'src/index.ts'),
@@ -22,6 +22,7 @@ export default defineConfig({
 	test: {
 		includeSource: ['src/**/*.{js,ts}'],
 		coverage: {
+			include: ['src/**/*.{js,ts}'],
 			provider: 'v8',
 			reporter: [ 'text', 'json', 'html' ],
 		},

@@ -1,39 +1,15 @@
 {
-	"name": "@author/package",
-	"version": "0.0.0",
-	"description": "{{desc}}",
-	"license": "MIT",
-	"author": {
-		"name": "{{author}}",
-		"url": "https://github.com/{{author}}"
-	},
-	"keywords": [
-		"typescript"
-	],
-	"bugs": "https://github.com/{{author}}/{{package}}/issues",
-	"repository": "github:{{author}}/{{package}}",
-	"funding": {
-		"type": "individual",
-		"url": "https://github.com/sponsors/{{author}}"
-	},
-	"type": "module",
-	"types": "./dist/index.d.ts",
-	"module": "./dist/{{package}}.mjs",
-	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"import": "./dist/{{package}}.mjs"
-		}
-	},
-	"files": [
-		"dist"
+	"name": "@author/monorepo",
+	"private": true,
+	"workspaces": [
+		"packages/**"
 	],
 	"scripts": {
-		"build": "vite build",
+		"build": "npm run build -ws --if-present",
 		"build:all": "npm run build && npm run docs",
 		"docs": "typedoc",
 		"docs:watch": "npm run docs -- --watch",
-		"clean": "rm -rf ./dist/ ./docs/typedoc/ ./node_modules && rm -rf ./package-lock.json",
+		"clean": "rm -rf ./docs/typedoc/ ./node_modules && rm -rf ./package-lock.json",
 		"reinstall": "npm run clean && npm install",
 		"deploy": "gh-pages -d ./docs/typedoc/",
 		"test": "vitest --coverage",
@@ -46,31 +22,26 @@
 		"lint:md": "markdownlint-cli2 \"*/**.md\" \"#node_modules\"",
 		"lint:md-fix": "npm run lint:md -- --fix",
 		"lint:md-env": "markdownlint-cli2 --version",
-		"lint:es": "eslint . --ext .ts,.tsx",
+		"lint:es": "eslint . --cache --ext .ts,.tsx",
 		"lint:es-fix": "npm run lint:es -- --fix",
 		"lint:es-env": "eslint --env-info",
-		"lint:pub": "publint",
-		"lint:pub-env": "publint --version",
-		"prepare": "npm run build",
-		"prepublishOnly": "npm run test:all",
-		"preversion": "npm run lint",
-		"version": "npm run lint && git add -A src",
-		"postversion": "git push && git push --tags"
+		"lint:pub": "npm run publint -ws",
+		"lint:pub-env": "publint --version"
 	},
 	"devDependencies": {
-		"@types/node": "^20.10.6",
-		"@vitest/coverage-v8": "^1.1.1",
-		"@vitest/ui": "^1.1.1",
+		"@types/node": "^20.11.0",
+		"@vitest/coverage-v8": "^1.2.0",
+		"@vitest/ui": "^1.2.0",
 		"eslint": "8.56.0",
 		"eslint-config-neoncitylights": "^0.3.0",
 		"gh-pages": "6.1.1",
-		"markdownlint-cli2": "^0.11.0",
+		"markdownlint-cli2": "^0.12.1",
 		"markdownlint-config-neoncitylights": "^0.3.0",
 		"publint": "^0.2.7",
-		"typedoc": "0.25.4",
+		"typedoc": "0.25.7",
 		"typescript": "5.3.3",
-		"vite": "^5.0.10",
+		"vite": "^5.0.11",
 		"vite-plugin-dts": "^3.6.4",
-		"vitest": "^1.1.1"
+		"vitest": "^1.2.0"
 	}
 }
