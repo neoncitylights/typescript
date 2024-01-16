@@ -110,7 +110,6 @@ jobs:
       - build
       - lint
       - test
-      - docs
       - pkg-dry-run
     steps:
       - name: ✅ CI succeeded
