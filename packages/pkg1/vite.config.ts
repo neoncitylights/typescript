@@ -4,7 +4,7 @@ import { defineProject } from 'vitest/config';
 export default defineProject({
 	build: {
 		lib: {
-			entry: new URL('src/index.ts', import.meta.dirname).toString(),
+			entry: new URL('src/index.ts', import.meta.url).pathname,
 			formats: ['es'],
 			fileName: () => '{{package}}.mjs',
 		},
