@@ -1,12 +1,10 @@
-import path from 'node:path';
-
 import dts from 'vite-plugin-dts';
 import { defineProject } from 'vitest/config';
 
 export default defineProject({
 	build: {
 		lib: {
-			entry: path.resolve(__dirname, 'src/index.ts'),
+			entry: new URL('src/index.ts', import.meta.url).pathname,
 			formats: ['es'],
 			fileName: () => '{{package}}.mjs',
 		},
