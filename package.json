@@ -29,8 +29,8 @@
 	},
 	"devDependencies": {
 		"@types/node": "^20.11.5",
-		"@vitest/coverage-v8": "^1.2.1",
-		"@vitest/ui": "^1.2.1",
+		"@vitest/coverage-v8": "^1.2.2",
+		"@vitest/ui": "^1.2.2",
 		"eslint": "8.56.0",
 		"eslint-config-neoncitylights": "^0.3.0",
 		"markdownlint-cli2": "^0.12.1",
@@ -39,7 +39,7 @@
 		"typedoc": "0.25.7",
 		"typescript": "5.3.3",
 		"vite": "^5.0.12",
-		"vite-plugin-dts": "^3.7.1",
-		"vitest": "^1.2.1"
+		"vite-plugin-dts": "^3.7.2",
+		"vitest": "^1.2.2"
 	}
 }
