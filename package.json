@@ -31,7 +31,7 @@
 		"@types/node": "^20.11.19",
 		"@vitest/coverage-v8": "^1.3.0",
 		"@vitest/ui": "^1.2.2",
-		"eslint": "8.56.0",
+		"eslint": "8.57.0",
 		"eslint-config-neoncitylights": "^0.3.0",
 		"markdownlint-cli2": "^0.12.1",
 		"markdownlint-config-neoncitylights": "^0.3.0",
