@@ -28,7 +28,7 @@
 		"lint:pub-env": "publint --version"
 	},
 	"devDependencies": {
-		"@types/node": "^20.12.5",
+		"@types/node": "^20.12.7",
 		"@vitest/coverage-v8": "^1.4.0",
 		"@vitest/ui": "^1.2.2",
 		"eslint": "8.57.0",
@@ -37,7 +37,7 @@
 		"markdownlint-config-neoncitylights": "^0.3.0",
 		"publint": "^0.2.7",
 		"typedoc": "0.25.13",
-		"typescript": "5.4.4",
+		"typescript": "5.4.5",
 		"vite": "^5.2.8",
 		"vite-plugin-dts": "^3.8.1",
 		"vitest": "^1.2.2"
