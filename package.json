@@ -28,7 +28,7 @@
 		"lint:pub-env": "publint --version"
 	},
 	"devDependencies": {
-		"@types/node": "^20.12.7",
+		"@types/node": "^20.14.2",
 		"@vitest/coverage-v8": "^1.6.0",
 		"@vitest/ui": "^1.2.2",
 		"eslint": "8.57.0",
