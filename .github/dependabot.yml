@@ -10,7 +10,7 @@ updates:
     schedule:
       interval: "monthly"
     commit-message:
-      prefix: "chore(deps/npm):"
+      prefix: "deps(npm):"
     groups:
       typescript:
         patterns:
@@ -34,5 +34,5 @@ updates:
     schedule:
       interval: "daily"
     commit-message:
-      prefix: "chore(deps/actions):"
+      prefix: "deps(gha):"
     open-pull-requests-limit: 4
