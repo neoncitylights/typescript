@@ -36,13 +36,13 @@ jobs:
           - tool: ESLint
             npm-cmd-suffix: es
             npm-cmd-env: |
-              eslint --env-info
+              npx eslint --env-info
           - tool: publint
             npm-cmd-suffix: pub
             npm-cmd-env: |
               node --version
               npm --version
-              publint --version
+              npx publint --version
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
