@@ -96,15 +96,3 @@ jobs:
         run: npm publish --access public --dry-run
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-  ci-success:
-    runs-on: ubuntu-latest
-    if: ${{ success() }}
-    needs:
-      - build
-      - lint
-      - test
-      - pkg-dry-run
-    steps:
-      - name: ✅ CI succeeded
-        run: exit 0
