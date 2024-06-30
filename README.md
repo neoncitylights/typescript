@@ -5,8 +5,7 @@ This repository template makes it easier to create a new NPM library, package or
 ## Features
 
 - [x] [Node.js](https://nodejs.org/) and latest [TypeScript](https://www.typescriptlang.org/) support
-- [x] Support for [GitHub Codespaces](https://github.com/features/codespaces)
-- [x] Continuous integration with [GitHub Actions](https://github.com/features/actions) and [Codesandbox CI](https://codesandbox.io/docs/learn/ci)
+- [x] Continuous integration with [GitHub Actions](https://github.com/features/actions)
 - [x] Auto-bundled, minified source code with [Vite](https://vitejs.dev/)
 - [x] Unit testing and code coverage with [Vitest](https://vitest.dev/) framework
 - [x] Auto-generated documentation for TypeScript code with [TypeDoc](https://typedoc.org/)
@@ -87,15 +86,15 @@ These are the most relevant commands that you'll likely use:
 | ------- | ----------- |
 | `npm run build` | Build the library for distributing |
 | `npm run docs` | Generate documentation |
-| `npm run docs:watch` | Generate documentation in watch mode|
+| `npm run docs-watch` | Generate documentation in watch mode|
 | `npm run clean` | Remove all generated files |
 | `npm run reinstall` | Cleans and reinstalls dependencies |
 | `npm run lint` | Check for linting errors |
-| `npm run lint:fix` | Fix linting errors |
+| `npm run lint-fix` | Fix linting errors |
 | `npm run test` | Run unit tests |
-| `npm run test:ci` | Run unit tests in CI mode |
-| `npm run test:ui` | Run unit tests in UI/browser mode |
-| `npm run test:watch` | Run unit tests in watch mode |
+| `npm run test-ci` | Run unit tests in CI mode |
+| `npm run test-ui` | Run unit tests in UI/browser mode |
+| `npm run test-watch` | Run unit tests in watch mode |
 
 ### Developer tools
 
@@ -105,7 +104,6 @@ These are the most relevant commands that you'll likely use:
 | TypeScript | [`tsconfig.json`](packages/pkg1/tsconfig.json) | [docs](https://www.typescriptlang.org/tsconfig), [website](https://www.typescriptlang.org/) |
 | TypeDoc (documentation generator) | [`tsconfig.json`](packages/pkg1/tsconfig.json) (`typedocOptions`) | [docs](https://typedoc.org/options/configuration/), [website](https://typedoc.org/) |
 | ESLint (code formatter + linter) | [`.eslintrc.cjs`](./.eslintrc.cjs) | [docs](https://eslint.org/docs/latest/use/configure/), [website](https://eslint.org/) |
-| Markdownlint (Markdown linter)   | [`.markdownlint-cli2.jsonc`](./.markdownlint-cli2.jsonc) | [docs](https://github.com/DavidAnson/markdownlint-cli2#markdownlint-cli2jsonc) |
 | Vite (bundler) | [`vite.config.ts`](packages/pkg1/vite.config.ts) | [docs](https://vitejs.dev/config/), [website](https://vitejs.dev/) |
 | Vitest (testing framework) | [`vite.config.ts`](packages/pkg1/vite.config.ts) (`test`) | [docs](https://vitest.dev/config/), [website](https://vitest.dev/) |
 | Vitest workspace | [`vitest.workspace.ts`](./vitest.workspace.ts) | [docs](https://vitest.dev/guide/workspace.html#workspace) |
