@@ -105,7 +105,6 @@ These are the most relevant commands that you'll likely use:
 | TypeScript | [`tsconfig.json`](packages/pkg1/tsconfig.json) | [docs](https://www.typescriptlang.org/tsconfig), [website](https://www.typescriptlang.org/) |
 | TypeDoc (documentation generator) | [`tsconfig.json`](packages/pkg1/tsconfig.json) (`typedocOptions`) | [docs](https://typedoc.org/options/configuration/), [website](https://typedoc.org/) |
 | ESLint (code formatter + linter) | [`.eslintrc.cjs`](./.eslintrc.cjs) | [docs](https://eslint.org/docs/latest/use/configure/), [website](https://eslint.org/) |
-| Markdownlint (Markdown linter)   | [`.markdownlint-cli2.jsonc`](./.markdownlint-cli2.jsonc) | [docs](https://github.com/DavidAnson/markdownlint-cli2#markdownlint-cli2jsonc) |
 | Vite (bundler) | [`vite.config.ts`](packages/pkg1/vite.config.ts) | [docs](https://vitejs.dev/config/), [website](https://vitejs.dev/) |
 | Vitest (testing framework) | [`vite.config.ts`](packages/pkg1/vite.config.ts) (`test`) | [docs](https://vitest.dev/config/), [website](https://vitest.dev/) |
 | Vitest workspace | [`vitest.workspace.ts`](./vitest.workspace.ts) | [docs](https://vitest.dev/guide/workspace.html#workspace) |

@@ -36,19 +36,13 @@ jobs:
           - tool: ESLint
             npm-cmd-suffix: es
             npm-cmd-env: |
-              npm run lint:es-env
-          - tool: Markdownlint
-            npm-cmd-suffix: md
-            npm-cmd-env: |
-              node --version
-              npm --version
-              npm run lint:md-env
+              eslint --env-info
           - tool: publint
             npm-cmd-suffix: pub
             npm-cmd-env: |
               node --version
               npm --version
-              npm run lint:pub-env
+              publint --version
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
