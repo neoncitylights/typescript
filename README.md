@@ -5,8 +5,7 @@ This repository template makes it easier to create a new NPM library, package or
 ## Features
 
 - [x] [Node.js](https://nodejs.org/) and latest [TypeScript](https://www.typescriptlang.org/) support
-- [x] Support for [GitHub Codespaces](https://github.com/features/codespaces)
-- [x] Continuous integration with [GitHub Actions](https://github.com/features/actions) and [Codesandbox CI](https://codesandbox.io/docs/learn/ci)
+- [x] Continuous integration with [GitHub Actions](https://github.com/features/actions)
 - [x] Auto-bundled, minified source code with [Vite](https://vitejs.dev/)
 - [x] Unit testing and code coverage with [Vitest](https://vitest.dev/) framework
 - [x] Auto-generated documentation for TypeScript code with [TypeDoc](https://typedoc.org/)
