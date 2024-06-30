@@ -29,7 +29,7 @@
 		"eslint": "8.57.0",
 		"eslint-config-neoncitylights": "^0.3.0",
 		"publint": "^0.2.7",
-		"typedoc": "0.26.1",
+		"typedoc": "0.26.3",
 		"typescript": "5.5.2",
 		"vite": "^5.3.1",
 		"vite-plugin-dts": "^3.9.1",
