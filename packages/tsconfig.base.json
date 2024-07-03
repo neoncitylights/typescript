@@ -40,6 +40,6 @@
 		"declarationMap": true,
 		"types": [
 			"vitest/importMeta"
-		],
+		]
 	}
 }

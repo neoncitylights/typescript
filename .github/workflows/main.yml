@@ -38,7 +38,7 @@ jobs:
             npm-cmd-env: |
               npx eslint --env-info
           - tool: publint
-            npm-cmd-suffix: publint
+            npm-cmd: publint
             npm-cmd-env: |
               node --version
               npm --version

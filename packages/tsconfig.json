@@ -13,14 +13,6 @@
 		"esModuleInterop": true
 	},
 	"references": [
-		{ "path": "packages/pkg1" }
-	],
-	"typedocOptions": {
-		"out": "docs/typedoc",
-		"entryPoints": ["packages/*"],
-		"entryPointStrategy": "packages",
-		"includeVersion": false,
-		"lightHighlightTheme": "github-light",
-		"darkHighlightTheme": "github-dark"
-	}
+		{ "path": "pkg1" }
+	]
 }

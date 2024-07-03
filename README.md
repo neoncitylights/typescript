@@ -40,8 +40,6 @@ Using your favorite text editor or IDE, find-and-replace the following placehold
 - `{{package}}`: Replace this with the name of your library.
 - `{{desc}}`: Replace this with a short description of your library.
 
-Delete this `README.md`, and rename [`LIBRARY.md`](packages/pkg1/LIBRARY.md) to `README.md`.
-
 ## Publishing a package
 
 if you haven't authenticated with the NPM CLI already, you'll need to do that first by running [`npm adduser`](https://docs.npmjs.com/cli/v9/commands/npm-adduser) in the terminal.
@@ -76,9 +74,6 @@ NPM has core commands that can be overriden by package authors. I've tried to ma
 
 - [`prepare`](https://docs.npmjs.com/cli/v8/using-npm/scripts#life-cycle-scripts)
 - [`prepublishOnly`](https://docs.npmjs.com/cli/v8/using-npm/scripts#life-cycle-scripts)
-- [`preversion`](https://docs.npmjs.com/cli/v6/commands/npm-version)
-- [`version`](https://docs.npmjs.com/cli/v6/commands/npm-version)
-- [`postversion`](https://docs.npmjs.com/cli/v6/commands/npm-version)
 
 These are the most relevant commands that you'll likely use:
 
@@ -100,10 +95,10 @@ These are the most relevant commands that you'll likely use:
 
 | Tool | File | Documentation |
 | ---- | ---- | ------------- |
-| NPM package | [`package.json`](packages/pkg1/package.json) | [docs](https://docs.npmjs.com/cli/v10/configuring-npm/package-json), [website](https://docs.npmjs.com/) |
-| TypeScript | [`tsconfig.json`](packages/pkg1/tsconfig.json) | [docs](https://www.typescriptlang.org/tsconfig), [website](https://www.typescriptlang.org/) |
-| TypeDoc (documentation generator) | [`tsconfig.json`](packages/pkg1/tsconfig.json) (`typedocOptions`) | [docs](https://typedoc.org/options/configuration/), [website](https://typedoc.org/) |
-| ESLint (code formatter + linter) | [`.eslintrc.cjs`](./.eslintrc.cjs) | [docs](https://eslint.org/docs/latest/use/configure/), [website](https://eslint.org/) |
+| NPM package | [`package.json`](package.json) | [docs](https://docs.npmjs.com/cli/v10/configuring-npm/package-json), [website](https://docs.npmjs.com/) |
+| TypeDoc (documentation generator) | [`package.json`](package.json) (`typedocOptions`) | [docs](https://typedoc.org/options/configuration/), [website](https://typedoc.org/) |
+| TypeScript | [`packages/tsconfig.json`](packages/tsconfig.json) | [docs](https://www.typescriptlang.org/tsconfig), [website](https://www.typescriptlang.org/) |
+| ESLint (code formatter + linter) | [`eslint.config.js`](./eslint.config.js) | [docs](https://eslint.org/docs/latest/use/configure/), [website](https://eslint.org/) |
 | Vite (bundler) | [`vite.config.ts`](packages/pkg1/vite.config.ts) | [docs](https://vitejs.dev/config/), [website](https://vitejs.dev/) |
 | Vitest (testing framework) | [`vite.config.ts`](packages/pkg1/vite.config.ts) (`test`) | [docs](https://vitest.dev/config/), [website](https://vitest.dev/) |
 | Vitest workspace | [`vitest.workspace.ts`](./vitest.workspace.ts) | [docs](https://vitest.dev/guide/workspace.html#workspace) |
