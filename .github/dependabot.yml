@@ -11,6 +11,10 @@ updates:
       interval: "monthly"
     commit-message:
       prefix: "deps(npm):"
+    ignore:
+      # TEMP: ignore eslint major version (v9) until typescript-eslint releases v8
+      - dependency-name: "eslint"
+        update-types: ["version-update:semver-major"]
     groups:
       typescript:
         patterns:
@@ -19,8 +23,12 @@ updates:
           - "@types/node"
       lint:
         patterns:
+          - "@types/eslint__js"
+          - "@eslint/*"
+          - "@stylistic/eslint-plugin"
           - "eslint*"
           - "publint"
+          - "typescript-eslint"
       vite:
         patterns:
           - "vite"
