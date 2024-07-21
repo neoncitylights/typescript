@@ -14,7 +14,7 @@ updates:
     ignore:
       # TEMP: ignore eslint major version (v9) until typescript-eslint releases v8
       - dependency-name: "eslint"
-        versions: ["version-update:semver-major"]
+        update-types: ["version-update:semver-major"]
     groups:
       typescript:
         patterns:
