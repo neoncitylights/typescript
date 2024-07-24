@@ -28,7 +28,7 @@ Choose a method:
 
 Using your text editor or IDE, find-and-replace the following placeholders:
 
-- `@author/package`: Replace this with the name of your package. The `@author` part represents a user or an organization.
+- `@author/package`: Replace this with the author's name (e.g a user or organization) and package's name.
   - **Note**: This placeholder is different than the others to avoid warnings from the NPM client.
 - `{{author}}`: Replace this with your GitHub/npm username, or the name of your organization.
 - `{{package}}`: Replace this with the name of your library.
