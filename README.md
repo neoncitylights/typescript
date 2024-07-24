@@ -14,7 +14,7 @@ This repository template makes it easier to create a new NPM library, package or
 
 ## Getting started
 
-### Creating a new repository
+### Create a new repository
 
 Choose a method:
 - **GitHub UI**: Press the "Use this template" button in the top-right corner of this page.
@@ -35,6 +35,9 @@ Using your text editor or IDE, find-and-replace the following placeholders:
 
 ## Publishing a package
 ```shell
+# Enter the root directory of the package you want to publish
+cd packages/pkg1
+
 # if package is scoped, e.g "hello-world"
 npm publish
 
