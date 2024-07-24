@@ -13,7 +13,7 @@ export default tsEslint.config(
 		indent: 'tab',
 		quote: 'single',
 		semi: false,
-		jsx: true,
+		jsx: false,
 	}),
 	eslint.configs.recommended,
 	...tsEslint.configs.recommended,
