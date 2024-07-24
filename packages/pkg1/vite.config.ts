@@ -6,7 +6,7 @@ export default defineProject({
 		lib: {
 			entry: new URL('src/index.ts', import.meta.url).pathname,
 			formats: ['es'],
-			fileName: () => '{{package}}.mjs',
+			fileName: () => 'index.mjs',
 		},
 	},
 	define: {

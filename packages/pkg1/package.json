@@ -21,11 +21,11 @@
 	},
 	"type": "module",
 	"types": "./dist/index.d.ts",
-	"module": "./dist/{{package}}.mjs",
+	"module": "./dist/index.mjs",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
-			"import": "./dist/{{package}}.mjs"
+			"import": "./dist/index.mjs"
 		}
 	},
 	"files": [
