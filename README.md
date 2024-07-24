@@ -30,9 +30,9 @@ Using your text editor or IDE, find-and-replace the following placeholders:
 
 - `@author/package`: Replace this with the author's name (e.g a user or organization) and package's name.
   - **Note**: This placeholder is different than the others to avoid warnings from the NPM client.
-- `{{author}}`: Replace this with your GitHub/npm username, or the name of your organization.
-- `{{package}}`: Replace this with the name of your library.
-- `{{desc}}`: Replace this with a short description of your library.
+- `{{author}}`: Replace this with the author's name (e.g real name, GitHub username, or organization).
+- `{{package}}`: Replace this with the name of the package.
+- `{{desc}}`: Replace this with a short description of the package.
 
 ## Publishing a package
 ```shell
