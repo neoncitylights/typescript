@@ -28,7 +28,8 @@ Choose a method:
 
 Using your text editor or IDE, find-and-replace the following placeholders:
 
-- `@author/package`: Replace this with the name of your package. This can be scoped under a user/organization (e.g `@samantha/my-really-cool-package`). **Note**: This placeholder is different than the others to avoid warnings from the NPM client.
+- `@author/package`: Replace this with the name of your package. This can be scoped under a user/organization (e.g `@org-or-user/my-package`). 
+  - **Note**: This placeholder is different than the others to avoid warnings from the NPM client.
 - `{{author}}`: Replace this with your GitHub/npm username, or the name of your organization.
 - `{{package}}`: Replace this with the name of your library.
 - `{{desc}}`: Replace this with a short description of your library.
