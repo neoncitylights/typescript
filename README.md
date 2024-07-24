@@ -53,9 +53,9 @@ npm publish --access public
 
 | Command | Description |
 | ------- | ----------- |
-| `npm run build` | Build the library for distributing |
+| `npm run build` | Build all packages |
 | `npm run docs` | Generate documentation |
-| `npm run docs-watch` | Generate documentation in watch mode|
+| `npm run docs-watch` | Generate documentation in watch mode |
 | `npm run clean` | Remove all generated files |
 | `npm run test` | Run unit tests |
 | `npm run test-ci` | Run unit tests in CI mode |
