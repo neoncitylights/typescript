@@ -11,7 +11,6 @@
 		"docs": "typedoc",
 		"docs-watch": "npm run docs -- --watch",
 		"clean": "rm -rf ./docs/typedoc/ ./node_modules && rm -rf ./package-lock.json",
-		"reinstall": "npm run clean && npm install",
 		"test": "vitest --coverage",
 		"test-ci": "npm run test -- run",
 		"test-ui": "npm run test -- --ui",
@@ -19,12 +18,13 @@
 		"test-all": "npm run test-ci && npm run lint",
 		"lint": "npm run eslint && npm run publint",
 		"lint-fix": "npm run eslint-fix",
-		"eslint": "eslint packages/*/src/** --cache",
+		"eslint": "eslint . --cache",
+		"eslint-debug": "eslint --print-config eslint.config.js",
 		"eslint-fix": "npm run eslint -- --fix",
 		"publint": "npm run publint -ws"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.7.0",
+		"@eslint/js": "^8.57.0",
 		"@stylistic/eslint-plugin": "^2.3.0",
 		"@types/eslint__js": "^8.42.3",
 		"@types/node": "^20.14.11",

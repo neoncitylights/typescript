@@ -1,5 +1,5 @@
-import dts from 'vite-plugin-dts';
-import { defineProject } from 'vitest/config';
+import dts from 'vite-plugin-dts'
+import { defineProject } from 'vitest/config'
 
 export default defineProject({
 	build: {
@@ -9,8 +9,8 @@ export default defineProject({
 			fileName: () => '{{package}}.mjs',
 		},
 	},
-	define: { 
-		'import.meta.vitest': 'undefined', 
+	define: {
+		'import.meta.vitest': 'undefined',
 	},
 	plugins: [
 		dts({
@@ -22,7 +22,7 @@ export default defineProject({
 		coverage: {
 			include: ['src/**/*.{js,ts}'],
 			provider: 'v8',
-			reporter: [ 'text', 'json', 'html' ],
+			reporter: ['text', 'json', 'html'],
 		},
 	},
-});
+})

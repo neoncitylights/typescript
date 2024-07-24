@@ -1,13 +1,45 @@
 {
-	"extends": "../tsconfig.base.json",
 	"include": [
-		"src"
+		"./src"
 	],
-	"exclude": [
-		"node_modules",
-		"**/tests/*",
-		"**/__tests__/*"
-	],
+	"compilerOptions": {
+		/* base options */
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"verbatimModuleSyntax": true,
+		"moduleDetection": "force",
+		"rootDir": "./src",
+
+		/* transpilation */
+		"lib": [ "ES2022" ],
+		"target": "ES2022",
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"isolatedModules": true,
+		"sourceMap": true,
+		"declaration": true,
+		"declarationMap": true,
+		"composite": true,
+
+		/* strictness */
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"allowUnusedLabels": false,
+		"allowUnreachableCode": false,
+		"exactOptionalPropertyTypes": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+
+		/** ES support */
+		"useDefineForClassFields": true,
+	},
 	"typedocOptions": {
 		"entryPoints": [
 			"src/index.ts"

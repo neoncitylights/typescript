@@ -1,7 +1,6 @@
-import { expect, test } from 'vitest';
-
-import { greet } from '../src/index';
+import { expect, test } from 'vitest'
+import { greet } from '../src'
 
 test('greet runs correctly', () => {
-	expect(greet('John')).toBe('Hello, John!');
-});
+	expect(greet('John')).toBe('Hello, John!')
+})
