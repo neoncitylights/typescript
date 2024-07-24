@@ -3,9 +3,13 @@
 	"compilerOptions": {
 		"noEmit": true
 	},
-	"exclude": [],
+	"exclude": [
+		"dist",
+		"docs"
+	],
 	"include": [
-		"eslint.config.js",
-		"vitest.workspace.ts"
+		"src",
+		"tests",
+		"vite.config.ts"
 	]
 }
