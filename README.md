@@ -31,7 +31,7 @@ Using your text editor or IDE, find-and-replace the following placeholders:
 - `@author/package`: Replace this with the author's name (e.g a user or organization) and package's name.
   - **Note**: This placeholder is different than the others to avoid warnings from the NPM client.
 - `@author/monorepo` (optional): Replace this with something else you prefer. This only exists in the root `package.json`.
-- `{{author}}`: Replace this with the author's name (e.g your GitHub username, real name, organization's name, etc).
+- `{{author}}`: Replace this with the author's name (e.g GitHub username, real name, organization's name, etc).
 - `{{username}}`: Replace this with your GitHub username.
 - `{{repository}}`: Replace this with the name of your repository.
 - `{{desc}}`: Replace this with a short description of the package.
