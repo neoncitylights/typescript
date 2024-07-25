@@ -5,16 +5,16 @@
 	"license": "MIT",
 	"author": {
 		"name": "{{author}}",
-		"url": "https://github.com/{{author}}"
+		"url": "https://github.com/{{username}}"
 	},
 	"keywords": [
 		"typescript"
 	],
-	"bugs": "https://github.com/{{author}}/{{package}}/issues",
-	"repository": "github:{{author}}/{{package}}",
+	"bugs": "https://github.com/{{username}}/{{repository}}/issues",
+	"repository": "github:{{username}}/{{repository}}",
 	"funding": {
 		"type": "individual",
-		"url": "https://github.com/sponsors/{{author}}"
+		"url": "https://github.com/sponsors/{{username}}"
 	},
 	"publishConfig": {
 		"access": "public"
