@@ -10,8 +10,8 @@ This repository template makes it easier to create a new NPM library, package or
 - [x] Continuous integration with [GitHub Actions](https://github.com/features/actions)
 - [x] Auto-bundled, minified source code with [Vite](https://vitejs.dev/)
 - [x] Unit testing and code coverage with [Vitest](https://vitest.dev/) framework
-- [x] Auto-generated documentation for TypeScript code with [TypeDoc](https://typedoc.org/)
-- [x] Auto-formatted and linted code with [ESLint](https://eslint.org/)
+- [x] Auto-generated API documentation with [TypeDoc](https://typedoc.org/)
+- [x] Auto-linted and formatted code with [ESLint](https://eslint.org/) and [Stylistic](https://eslint.style)
 - [x] Dependency updates with [Dependabot](https://github.com/dependabot)
 
 ## Getting started
