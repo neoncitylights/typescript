@@ -5,6 +5,7 @@ This repository template makes it easier to create a new NPM library, package or
 ## Features
 
 - [x] [Node.js](https://nodejs.org/) and latest [TypeScript](https://www.typescriptlang.org/) support
+- [x] Monorepo support with [NPM Workspaces](https://docs.npmjs.com/cli/v10/using-npm/workspaces)
 - [x] JS module resolution with [ES Modules](https://nodejs.org/api/esm.html), the official ECMAScript standard
 - [x] Continuous integration with [GitHub Actions](https://github.com/features/actions)
 - [x] Auto-bundled, minified source code with [Vite](https://vitejs.dev/)
