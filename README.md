@@ -34,7 +34,6 @@ Using your text editor or IDE, find-and-replace the following placeholders:
 - `{{author}}`: Replace this with the author's name (e.g your GitHub username, real name, organization's name, etc).
 - `{{username}}`: Replace this with your GitHub username.
 - `{{repository}}`: Replace this with the name of your repository.
-
 - `{{desc}}`: Replace this with a short description of the package.
 
 ## Publishing a package
