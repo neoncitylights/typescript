@@ -10,6 +10,6 @@
 	"include": [
 		"src",
 		"tests",
-		"vite.config.ts"
+		"*.config.ts"
 	]
 }
