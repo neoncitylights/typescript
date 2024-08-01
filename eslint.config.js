@@ -1,6 +1,7 @@
 import eslint from '@eslint/js'
 import tsEslint from 'typescript-eslint'
 import stylistic from '@stylistic/eslint-plugin'
+import pluginPromise from 'eslint-plugin-promise'
 
 export default tsEslint.config(
 	{
@@ -16,6 +17,7 @@ export default tsEslint.config(
 		jsx: false,
 	}),
 	eslint.configs.recommended,
+	pluginPromise.configs['flat/recommended'],
 	...tsEslint.configs.recommended,
 	...tsEslint.configs.stylistic,
 	{
