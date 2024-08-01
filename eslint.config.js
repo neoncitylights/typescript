@@ -19,12 +19,13 @@ export default tsEslint.config(
 	...tsEslint.configs.recommended,
 	...tsEslint.configs.stylistic,
 	{
+		files: [
+			'packages/**/src',
+			'packages/**/tests',
+		],
 		languageOptions: {
 			parserOptions: {
-				project: [
-					'./tsconfig.eslint.json',
-					'./packages/**/tsconfig.eslint.json',
-				],
+				projectService: true,
 				tsconfigRootDir: import.meta.dirname,
 			},
 		},
