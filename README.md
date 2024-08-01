@@ -73,12 +73,12 @@ npm publish --access public
 
 | Tool               | File | Documentation |
 | ------------------ | ---- | ------------- |
-| NPM                | [`package.json`](package.json) | [docs](https://docs.npmjs.com/cli/v10/configuring-npm/package-json), [website](https://docs.npmjs.com/) |
+| NPM                | [`package.json`](package.json), [`packages/*/package.json`](./packages/pkg1/package.json) | [docs](https://docs.npmjs.com/cli/v10/configuring-npm/package-json), [website](https://docs.npmjs.com/) |
 | TypeScript         | [`tsconfig.json`](./tsconfig.json), [`packages/*/tsconfig.json`](packages/pkg1/tsconfig.json) | [docs](https://www.typescriptlang.org/tsconfig), [website](https://www.typescriptlang.org/) |
 | TypeDoc            | [`tsconfig.json`](tsconfig.json) (`typedocOptions`) | [docs](https://typedoc.org/options/configuration/), [website](https://typedoc.org/) |
 | ESLint             | [`eslint.config.js`](./eslint.config.js) | [docs](https://eslint.org/docs/latest/use/configure/), [website](https://eslint.org/) |
 | Vite               | [`packages/*/vite.config.ts`](packages/pkg1/vite.config.ts) | [docs](https://vitejs.dev/config/), [website](https://vitejs.dev/) |
-| Vitest             | [`packages/*/vite.config.ts`](packages/pkg1/vite.config.ts) (`test`) | [docs](https://vitest.dev/config/), [website](https://vitest.dev/) |
+| Vitest             | [`vitest.config.ts`](./vitest.config.ts), [`packages/*/vite.config.ts`](packages/pkg1/vite.config.ts) (`test`) | [docs](https://vitest.dev/config/), [website](https://vitest.dev/) |
 | Vitest (workspace) | [`vitest.workspace.ts`](./vitest.workspace.ts) | [docs](https://vitest.dev/guide/workspace.html) |
 | Dependabot         | [`.github/dependabot.yml`](./.github/dependabot.yml) | [docs](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file), [website](https://github.com/dependabot) |
 
